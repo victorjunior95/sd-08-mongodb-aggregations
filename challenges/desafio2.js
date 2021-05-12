@@ -9,9 +9,9 @@ db.movies.aggregate([
   { $project: {
     _id: false,
     titulo: "$title",
-    avaliacao: "$rated",
-    notaImdb: "$imdb.rating",
-    votosImdb: "$imdb.votes",
+    avaliado: "$rated",
+    notaIMDB: "$imdb.rating",
+    votosIMDB: "$imdb.votes",
     ano: "$year",
   } },
 ]);
