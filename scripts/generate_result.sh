@@ -29,7 +29,7 @@ print_results() {
 
 # Print tests evaluation
 # for entry in "$TRYBE_DIR/expected-results"/*
-requisito=2
+requisito=3
 for i in $(seq $requisito $requisito)
 do
   entry="$TRYBE_DIR/expected-results/desafio$i"
