@@ -53,7 +53,7 @@ db.trips.aggregate([
   },
   {
     $match: {
-      diaDaSemana: dia,
+      diaDaSemana: dia.diaDaSemana,
     },
   },
   {
