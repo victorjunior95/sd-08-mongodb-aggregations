@@ -1,4 +1,5 @@
-db.movies.aggregate([{
+db.movies.aggregate([
+  {
     $match: {
       countries: "USA",
       "tomatoes.viewer.rating": { $gte: 3 },
@@ -31,5 +32,5 @@ db.movies.aggregate([{
       _id: 0,
       title: "$title",
     },
-  }
+  },
 ]);

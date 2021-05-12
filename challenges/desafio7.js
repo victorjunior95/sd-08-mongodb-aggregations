@@ -1,4 +1,5 @@
-db.movies.aggregate([{
+db.movies.aggregate([
+  {
     $match: {
       cast: { $exists: true },
       languages: { $in: ["English"],
