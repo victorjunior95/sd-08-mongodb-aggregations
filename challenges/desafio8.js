@@ -23,11 +23,11 @@ db.air_alliances.aggregate(
     },
     {
       $match: {
-        "routeInfo.1": { $exists: true }
-      }
+        "routeInfo.1": { $exists: true },
+      },
     },
     {
-      $unwind: "$routeInfo"
+      $unwind: "$routeInfo",
     },
     {
       $group: {
