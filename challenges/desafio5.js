@@ -12,7 +12,9 @@
 // o title do vigésimo quinto filme da agregação que satisfaz as seguintes condições:
 // countries é Estados unidos
 // tomatoes.viewer.rating maior ou igual a 3
-// Crie um novo campo chamado num_favs, que represente quantos atores ou atrizes da nossa lista de favoritos aparecem no elenco (campo cast) do filme.
+// Crie um novo campo chamado num_favs,
+// que represente quantos atores ou atrizes da nossa lista de favoritos
+// aparecem no elenco (campo cast) do filme.
 // Ordene os resultados por num_favs, tomatoes.viewer.rating e title, todos em ordem decrescente.
 // Dica: coloque a lista de atores e atrizes favoritos em uma variável
 // e explore operadores como $size e $setIntersection.
