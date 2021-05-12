@@ -26,6 +26,9 @@ db.air_routes.aggregate([
     },
   },
   {
+    $unwind: "$_id",
+  },
+  {
     $sort: { totalRotas: -1 },
   },
   {
