@@ -6,8 +6,9 @@ db.movies.aggregate([
       rated: { $in: ["PG", "G"] },
       languages: { $all: ["English", "Spanish"] },
     } },
-  { $group: {
-    _id: null,
-    totalDeFilmesPesquisados: { $sum: 1 },
-  },
-  }]);
+  // { $group: {
+  //   _id: null,
+  //   totalDeFilmesPesquisados: { $sum: 1 },
+  // },
+  // },
+]);
