@@ -1,4 +1,4 @@
-const favorite_actors = [
+const favoriteActors = [
   "Sandra Bullock",
   "Tom Hanks",
   "Julia Roberts",
@@ -27,7 +27,7 @@ db.movies.aggregate([
     },
   },
   {
-    $addFields: { all_favs: { $setIntersection: ["$cast", favorite_actors] } },
+    $addFields: { all_favs: { $setIntersection: ["$cast", favoriteActors] } },
   },
   { $addFields: { num_favs: { $size: "$all_favs" } } },
   { $sort: { num_favs: -1, "tomatoes.viewer.rating": -1, title: -1 } },
