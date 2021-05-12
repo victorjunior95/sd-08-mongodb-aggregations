@@ -6,18 +6,13 @@ db.movies.aggregate([
       },
     },
   },
-  // {
-  //   $addFields: {
-
-  //   }
-  // },
   {
     $match: {
-      title_split: { },
+      "title_split.1": { $exists: false },
     },
   },
   {
-    $sort: { title: -1 },
+    $sort: { "title_split.0": 1 },
   },
   {
     $project: {
