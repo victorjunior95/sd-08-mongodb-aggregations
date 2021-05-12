@@ -19,6 +19,9 @@ db.air_routes.aggregate([
     },
   },
   {
+    $unwind: "$airplanes",
+  },
+  {
     $group: {
       _id: "$airplanes.name",
       totalRotas: { $sum: 1 },

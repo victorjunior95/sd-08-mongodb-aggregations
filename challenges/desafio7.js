@@ -23,5 +23,11 @@ db.movies.aggregate(
         media_rating: { $round: ["$media_rating", 1] },
       },
     },
+    {
+      $sort: {
+        numeroFilmes: -1,
+        _id: -1,
+      },
+    },
   ],
 );
