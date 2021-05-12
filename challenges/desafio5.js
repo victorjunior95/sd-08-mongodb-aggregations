@@ -9,9 +9,6 @@ db.movies.aggregate([
     },
   },
   {
-    $skip: 24,
-  },
-  {
     $addFields: {
       num_favs: {
         $size: {
@@ -26,6 +23,9 @@ db.movies.aggregate([
       "tomatoes.viewer.rating": -1,
       title: -1,
     },
+  },
+  {
+    $skip: 24,
   },
   {
     $project: {
