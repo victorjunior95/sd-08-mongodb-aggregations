@@ -16,6 +16,7 @@ db.movies.aggregate(
     },
     { $project:
       {
+        _id: 0,
         maior_rating: 1,
         menor_rating: 1,
         media_rating: { $round: ["$media_rating", 1] },
