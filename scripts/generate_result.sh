@@ -30,7 +30,7 @@ print_results() {
 # Print tests evaluation
 # Inicio da modificação <==
 # for entry in "$TRYBE_DIR/expected-results"/*  ===  DESCOMENTAR
-requisito=4
+requisito=5
 for i in $(seq $requisito $requisito)
 do
   entry="$TRYBE_DIR/expected-results/desafio$i"
