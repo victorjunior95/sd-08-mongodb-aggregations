@@ -48,6 +48,7 @@ do
   scripts/exec.sh "$mql" &> "$resultPath"
   # Check result with the expected
   diff=$(diff "$resultPath" "$TRYBE_DIR/expected-results/$chName")
+  diff --color "$resultPath" "$TRYBE_DIR/expected-results/$chName"
   if [[ ! -z "$diff" ]]; then
     printf "\n%s: \e[1;31mfailed \e[0m" "$chName" >> "$RESULTS_DIR/evaluation.out"
     print_results

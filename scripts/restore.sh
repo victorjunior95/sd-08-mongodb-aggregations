@@ -11,4 +11,4 @@ fi
 BSON_PATH=$1
 
 # Restore collection
-mongorestore --maintainInsertionOrder --db "$DBNAME" "$BSON_PATH"
+mongorestore --quiet --maintainInsertionOrder --db "$DBNAME" "$BSON_PATH"
