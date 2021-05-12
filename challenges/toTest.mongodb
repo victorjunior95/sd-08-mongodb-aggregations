@@ -1,30 +1,27 @@
 use("aggregations");
 db.trips.aggregate([
+  {
+    $match: {
+      "startTime": {
+        $gte: ISODate("2016-03-10T00:00:00Z"),
+        $lte: ISODate("2016-03-10T23:59:59Z")
+      }
+    }
+  },
   {/**
    * newField: The new field name.
    * expression: The new field expression.
    */
   $addFields: {
-    diaDaSemana: {$dayOfWeek: "$startTime"},
-  }},
-  {
-  $match: {
-    diaDaSemana: 5,
+    totalTime: {$subtract: ["$stopTime", "$startTime"]},
   }},
   {$group: {
-    _id: "$startStationName",
-    total: { $sum: 1 }
+    _id: null,
+    duracaoMediaEmMinutos: {$avg: "$totalTime"}
   }},
-  {/**
-   * specifications: The fields to
-   *   include or exclude.
-   */
-  $project: {
-    nomeEstacao: "$_id",
-    total: "$total",
-    _id: 0,
-  }},
-  {$sort: {total: -1}},
   {
-  $limit: 1},
+  $project: {
+    _id: 0,
+    "duracaoMediaEmMinutos": {$ceil: {$divide: ["$duracaoMediaEmMinutos", 1000 * 60]}}
+  }}
 ]);
