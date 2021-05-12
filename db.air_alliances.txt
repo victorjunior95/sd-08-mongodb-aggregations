@@ -1,0 +1,221 @@
+> db.air_airlines.find().pretty()
+{
+	"_id" : ObjectId("56e9b497732b6122f8790280"),
+	"airline" : 4,
+	"name" : "2 Sqn No 1 Elementary Flying Training School",
+	"alias" : "",
+	"iata" : "WYT",
+	"icao" : "",
+	"active" : "N",
+	"country" : "United Kingdom",
+	"base" : "HGH"
+}
+{
+	"_id" : ObjectId("56e9b497732b6122f8790281"),
+	"airline" : 2,
+	"name" : "135 Airways",
+	"alias" : "",
+	"iata" : "GNL",
+	"icao" : "GENERAL",
+	"active" : "N",
+	"country" : "United States",
+	"base" : "LHE"
+}
+{
+	"_id" : ObjectId("56e9b497732b6122f8790282"),
+	"airline" : 5,
+	"name" : "213 Flight Unit",
+	"alias" : "",
+	"iata" : "TFU",
+	"icao" : "",
+	"active" : "N",
+	"country" : "Russia",
+	"base" : "HRI"
+}
+{
+	"_id" : ObjectId("56e9b497732b6122f8790283"),
+	"airline" : 3,
+	"name" : "1Time Airline",
+	"alias" : "1T",
+	"iata" : "RNX",
+	"icao" : "NEXTIME",
+	"active" : "Y",
+	"country" : "South Africa",
+	"base" : "CMU"
+}
+{
+	"_id" : ObjectId("56e9b497732b6122f8790284"),
+	"airline" : 6,
+	"name" : "223 Flight Unit State Airline",
+	"alias" : "",
+	"iata" : "CHD",
+	"icao" : "CHKALOVSK-AVIA",
+	"active" : "N",
+	"country" : "Russia",
+	"base" : "SAV"
+}
+{
+	"_id" : ObjectId("56e9b497732b6122f8790285"),
+	"airline" : 1,
+	"name" : "Private flight",
+	"alias" : "-",
+	"iata" : "N/A",
+	"icao" : "",
+	"active" : "Y",
+	"country" : "",
+	"base" : "JMK"
+}
+{
+	"_id" : ObjectId("56e9b497732b6122f8790286"),
+	"airline" : 7,
+	"name" : "224th Flight Unit",
+	"alias" : "",
+	"iata" : "TTF",
+	"icao" : "CARGO UNIT",
+	"active" : "N",
+	"country" : "Russia",
+	"base" : "BET"
+}
+{
+	"_id" : ObjectId("56e9b497732b6122f8790287"),
+	"airline" : 8,
+	"name" : "247 Jet Ltd",
+	"alias" : "",
+	"iata" : "TWF",
+	"icao" : "CLOUD RUNNER",
+	"active" : "N",
+	"country" : "United Kingdom",
+	"base" : "FLS"
+}
+{
+	"_id" : ObjectId("56e9b497732b6122f8790288"),
+	"airline" : 9,
+	"name" : "3D Aviation",
+	"alias" : "",
+	"iata" : "SEC",
+	"icao" : "SECUREX",
+	"active" : "N",
+	"country" : "United States",
+	"base" : "RIX"
+}
+{
+	"_id" : ObjectId("56e9b497732b6122f8790289"),
+	"airline" : 10,
+	"name" : "40-Mile Air",
+	"alias" : "Q5",
+	"iata" : "MLA",
+	"icao" : "MILE-AIR",
+	"active" : "Y",
+	"country" : "United States",
+	"base" : "GYA"
+}
+{
+	"_id" : ObjectId("56e9b497732b6122f879028a"),
+	"airline" : 11,
+	"name" : "4D Air",
+	"alias" : "",
+	"iata" : "QRT",
+	"icao" : "QUARTET",
+	"active" : "N",
+	"country" : "Thailand",
+	"base" : "RVN"
+}
+{
+	"_id" : ObjectId("56e9b497732b6122f879028b"),
+	"airline" : 12,
+	"name" : "611897 Alberta Limited",
+	"alias" : "",
+	"iata" : "THD",
+	"icao" : "DONUT",
+	"active" : "N",
+	"country" : "Canada",
+	"base" : "PBL"
+}
+{
+	"_id" : ObjectId("56e9b497732b6122f879028c"),
+	"airline" : 13,
+	"name" : "Ansett Australia",
+	"alias" : "AN",
+	"iata" : "AAA",
+	"icao" : "ANSETT",
+	"active" : "Y",
+	"country" : "Australia",
+	"base" : "WAG"
+}
+{
+	"_id" : ObjectId("56e9b497732b6122f879028d"),
+	"airline" : 14,
+	"name" : "Abacus International",
+	"alias" : "1B",
+	"iata" : "",
+	"icao" : "",
+	"active" : "Y",
+	"country" : "Singapore",
+	"base" : "MQT"
+}
+{
+	"_id" : ObjectId("56e9b497732b6122f879028e"),
+	"airline" : 15,
+	"name" : "Abelag Aviation",
+	"alias" : "W9",
+	"iata" : "AAB",
+	"icao" : "ABG",
+	"active" : "N",
+	"country" : "Belgium",
+	"base" : "SBY"
+}
+{
+	"_id" : ObjectId("56e9b497732b6122f879028f"),
+	"airline" : 16,
+	"name" : "Army Air Corps",
+	"alias" : "",
+	"iata" : "AAC",
+	"icao" : "ARMYAIR",
+	"active" : "N",
+	"country" : "United Kingdom",
+	"base" : "LRM"
+}
+{
+	"_id" : ObjectId("56e9b497732b6122f8790290"),
+	"airline" : 17,
+	"name" : "Aero Aviation Centre Ltd.",
+	"alias" : "",
+	"iata" : "AAD",
+	"icao" : "SUNRISE",
+	"active" : "N",
+	"country" : "Canada",
+	"base" : "OKJ"
+}
+{
+	"_id" : ObjectId("56e9b497732b6122f8790291"),
+	"airline" : 18,
+	"name" : "Aero Servicios Ejecutivos Internacionales",
+	"alias" : "",
+	"iata" : "SII",
+	"icao" : "ASEISA",
+	"active" : "N",
+	"country" : "Mexico",
+	"base" : "DWC"
+}
+{
+	"_id" : ObjectId("56e9b497732b6122f8790292"),
+	"airline" : 19,
+	"name" : "Aero Biniza",
+	"alias" : "",
+	"iata" : "BZS",
+	"icao" : "BINIZA",
+	"active" : "N",
+	"country" : "Mexico",
+	"base" : "CPR"
+}
+{
+	"_id" : ObjectId("56e9b497732b6122f8790293"),
+	"airline" : 20,
+	"name" : "Aero Albatros",
+	"alias" : "",
+	"iata" : "ABM",
+	"icao" : "ALBATROS ESPANA",
+	"active" : "N",
+	"country" : "Spain",
+	"base" : "DKR"
+}

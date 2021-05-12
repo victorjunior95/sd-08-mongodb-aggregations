@@ -1,0 +1,858 @@
+db.movies.find().pretty()
+{
+	"_id" : ObjectId("573a1390f29313caabcd4135"),
+	"title" : "Blacksmith Scene",
+	"year" : 1893,
+	"runtime" : 1,
+	"released" : ISODate("1893-05-09T00:00:00Z"),
+	"cast" : [
+		"Charles Kayser",
+		"John Ott"
+	],
+	"plot" : "Three men hammer on an anvil and pass a bottle of beer around.",
+	"fullplot" : "A stationary camera looks at a large anvil with a blacksmith behind it and one on either side. The smith in the middle draws a heated metal rod from the fire, places it on the anvil, and all three begin a rhythmic hammering. After several blows, the metal goes back in the fire. One smith pulls out a bottle of beer, and they each take a swig. Then, out comes the glowing metal and the hammering resumes.",
+	"awards" : "1 win.",
+	"lastupdated" : "2015-08-26 00:03:50.133000000",
+	"type" : "movie",
+	"directors" : [
+		"William K.L. Dickson"
+	],
+	"imdb" : {
+		"rating" : 6.2,
+		"votes" : 1189,
+		"id" : 5
+	},
+	"countries" : [
+		"USA"
+	],
+	"rated" : "UNRATED",
+	"genres" : [
+		"Short"
+	],
+	"tomatoes" : {
+		"viewer" : {
+			"rating" : 3,
+			"numReviews" : 184,
+			"meter" : 32
+		},
+		"lastUpdated" : ISODate("2015-06-28T18:34:09Z")
+	},
+	"num_mflix_comments" : 1,
+	"comments" : [
+		{
+			"name" : "Taylor Alvarez",
+			"email" : "taylor_alvarez@fakegmail.com",
+			"movie_id" : ObjectId("573a1390f29313caabcd4135"),
+			"text" : "Non dignissimos quo vero facere. Nihil incidunt nemo aliquam rem magnam vero. Deleniti nemo quidem ipsam id.",
+			"date" : ISODate("1970-03-27T17:15:30Z")
+		}
+	]
+}
+{
+	"_id" : ObjectId("573a1390f29313caabcd4136"),
+	"title" : "Pauvre Pierrot",
+	"year" : 1892,
+	"runtime" : 4,
+	"released" : ISODate("1892-10-28T00:00:00Z"),
+	"plot" : "One night, Arlequin come to see his lover Colombine. But then Pierrot knocks at the door and Colombine and Arlequin hide. Pierrot starts singing but Arlequin scares him and the poor man goes away.",
+	"fullplot" : "One night, Arlequin come to see his lover Colombine. But then Pierrot knocks at the door and Colombine and Arlequin hide. Pierrot starts singing but Arlequin scares him and the poor man goes away.",
+	"lastupdated" : "2015-08-12 00:06:02.720000000",
+	"type" : "movie",
+	"directors" : [
+		"�mile Reynaud"
+	],
+	"imdb" : {
+		"rating" : 6.7,
+		"votes" : 566,
+		"id" : 3
+	},
+	"countries" : [
+		"France"
+	],
+	"genres" : [
+		"Animation",
+		"Comedy",
+		"Short"
+	],
+	"num_mflix_comments" : 1,
+	"comments" : [
+		{
+			"name" : "Warren Wilson",
+			"email" : "warren_wilson@fakegmail.com",
+			"movie_id" : ObjectId("573a1390f29313caabcd4136"),
+			"text" : "Repudiandae minus voluptates quidem hic corporis corrupti id. Ipsum assumenda laborum officiis aliquam. Dolorum voluptatum saepe blanditiis. Eos modi dolores architecto laboriosam porro.",
+			"date" : ISODate("2005-01-04T11:56:37Z")
+		}
+	]
+}
+{
+	"_id" : ObjectId("573a1390f29313caabcd4137"),
+	"title" : "Edison Kinetoscopic Record of a Sneeze",
+	"year" : 1894,
+	"runtime" : 1,
+	"released" : ISODate("1894-01-09T00:00:00Z"),
+	"cast" : [
+		"Fred Ott"
+	],
+	"plot" : "A man (Thomas Edison's assistant) takes a pinch of snuff and sneezes. This is one of the earliest Thomas Edison films and was the first motion picture to be copyrighted in the United States.",
+	"fullplot" : "A man (Edison's assistant) takes a pinch of snuff and sneezes. This is one of the earliest Edison films and was the first motion picture to be copyrighted in the United States.",
+	"lastupdated" : "2015-08-10 00:21:07.127000000",
+	"type" : "movie",
+	"directors" : [
+		"William K.L. Dickson"
+	],
+	"imdb" : {
+		"rating" : 5.9,
+		"votes" : 988,
+		"id" : 8
+	},
+	"countries" : [
+		"USA"
+	],
+	"genres" : [
+		"Documentary",
+		"Short"
+	],
+	"tomatoes" : {
+		"viewer" : {
+			"rating" : 3.7,
+			"numReviews" : 128
+		},
+		"lastUpdated" : ISODate("2015-09-14T19:09:28Z")
+	}
+}
+{
+	"_id" : ObjectId("573a1390f29313caabcd413e"),
+	"title" : "Tables Turned on the Gardener",
+	"year" : 1895,
+	"runtime" : 1,
+	"cast" : [
+		"Fran�ois Clerc",
+		"Beno�t Duval"
+	],
+	"plot" : "A gardener is watering his flowers, when a mischievous boy sneaks up behind his back, and puts a foot on the water hose. The gardener is surprised, and looks into the nozzle to find out why...",
+	"fullplot" : "A gardener is watering his flowers, when a mischievous boy sneaks up behind his back, and puts a foot on the water hose. The gardener is surprised, and looks into the nozzle to find out why the water has stopped coming. The boy lifts his foot from the hose, whereby the water squirts up in the gardener's face. The gardener chases the boy, grips his ear, and slaps him in his buttocks. The boy runs away, and the gardener continues his watering.",
+	"lastupdated" : "2015-08-12 00:06:18.237000000",
+	"type" : "movie",
+	"directors" : [
+		"Louis Lumi�re"
+	],
+	"imdb" : {
+		"rating" : 7.1,
+		"votes" : 2554,
+		"id" : 14
+	},
+	"countries" : [
+		"France"
+	],
+	"genres" : [
+		"Comedy",
+		"Short"
+	],
+	"num_mflix_comments" : 3,
+	"comments" : [
+		{
+			"name" : "Amanda Tanner",
+			"email" : "amanda_tanner@fakegmail.com",
+			"movie_id" : ObjectId("573a1390f29313caabcd413e"),
+			"text" : "Atque tenetur molestias error. Facilis cumque sequi dolore rerum at repudiandae in. Maxime illum repudiandae cupiditate autem cum.",
+			"date" : ISODate("1988-06-25T03:47:52Z")
+		},
+		{
+			"name" : "Susan Chavez",
+			"email" : "susan_chavez@fakegmail.com",
+			"movie_id" : ObjectId("573a1390f29313caabcd413e"),
+			"text" : "Aut similique harum voluptas ut non eum aperiam. Iste earum ea dicta repudiandae. Voluptatem aliquam blanditiis quidem quisquam.",
+			"date" : ISODate("1984-07-17T06:24:00Z")
+		},
+		{
+			"name" : "Tywin Lannister",
+			"email" : "charles_dance@gameofthron.es",
+			"movie_id" : ObjectId("573a1390f29313caabcd413e"),
+			"text" : "Assumenda inventore harum perspiciatis eaque. Dolor dolores ab dolore repudiandae quisquam corrupti commodi.",
+			"date" : ISODate("1982-04-24T17:12:12Z")
+		}
+	]
+}
+{
+	"_id" : ObjectId("573a1390f29313caabcd414a"),
+	"title" : "Baby's Dinner",
+	"year" : 1895,
+	"runtime" : 1,
+	"released" : ISODate("1895-12-28T00:00:00Z"),
+	"cast" : [
+		"Mrs. Auguste Lumiere",
+		"Andr�e Lumi�re",
+		"Auguste Lumi�re"
+	],
+	"plot" : "A baby is seated at a table between its cheerful parents, Auguste and Marguerite Lumi�re. While the father is feeding the baby with a spoon, the mother is pouring coffee into her cup. The ...",
+	"fullplot" : "A baby is seated at a table between its cheerful parents, Auguste and Marguerite Lumi�re. While the father is feeding the baby with a spoon, the mother is pouring coffee into her cup. The father gives the baby a biscuit, which the baby grabs, but doesn't eat, although both parents encourage it. The father resumes feeding the baby with the spoon.",
+	"lastupdated" : "2015-08-12 00:06:40.657000000",
+	"type" : "movie",
+	"directors" : [
+		"Louis Lumi�re"
+	],
+	"imdb" : {
+		"rating" : 5.9,
+		"votes" : 1669,
+		"id" : 29
+	},
+	"countries" : [
+		"France"
+	],
+	"genres" : [
+		"Documentary",
+		"Short"
+	]
+}
+{
+	"_id" : ObjectId("573a1390f29313caabcd4178"),
+	"title" : "D�molition d'un mur",
+	"year" : 1896,
+	"runtime" : 1,
+	"released" : ISODate("2005-04-15T00:00:00Z"),
+	"cast" : [
+		"Auguste Lumi�re"
+	],
+	"plot" : "Auguste Lumi�re directs four workers in the demolition of an old wall at the Lumi�re factory. One worker is pressing the wall inwards with a jackscrew, while another is pushing it with a ...",
+	"fullplot" : "Auguste Lumi�re directs four workers in the demolition of an old wall at the Lumi�re factory. One worker is pressing the wall inwards with a jackscrew, while another is pushing it with a pick. When the wall hits the ground, a cloud of white dust whirls up. Three workers continue the demolition of the wall with picks.",
+	"lastupdated" : "2015-08-26 00:05:47.977000000",
+	"type" : "movie",
+	"directors" : [
+		"Louis Lumi�re"
+	],
+	"imdb" : {
+		"rating" : 6.4,
+		"votes" : 1359,
+		"id" : 70
+	},
+	"countries" : [
+		"France"
+	],
+	"genres" : [
+		"Documentary",
+		"Short"
+	],
+	"num_mflix_comments" : 1,
+	"comments" : [
+		{
+			"name" : "Osha",
+			"email" : "natalia_tena@gameofthron.es",
+			"movie_id" : ObjectId("573a1390f29313caabcd4178"),
+			"text" : "Animi reiciendis veritatis facere quisquam. Sequi minus voluptate porro quasi in numquam qui. Ipsam quo consectetur dolor.",
+			"date" : ISODate("2011-06-14T14:38:58Z")
+		}
+	]
+}
+{
+	"_id" : ObjectId("573a1390f29313caabcd418c"),
+	"title" : "The House of the Devil",
+	"year" : 1896,
+	"runtime" : 3,
+	"cast" : [
+		"Jeanne d'Alcy",
+		"Georges M�li�s"
+	],
+	"plot" : "A bat flies into an ancient castle and transforms itself into Mephistopheles himself. Producing a cauldron, Mephistopheles conjures up a young girl and various supernatural creatures, one ...",
+	"fullplot" : "A bat flies into an ancient castle and transforms itself into Mephistopheles himself. Producing a cauldron, Mephistopheles conjures up a young girl and various supernatural creatures, one of which brandishes a crucifix in an effort to force the devil-vampire to vanish.",
+	"lastupdated" : "2015-08-26 00:06:16.697000000",
+	"type" : "movie",
+	"directors" : [
+		"Georges M�li�s"
+	],
+	"writers" : [
+		"Georges M�li�s"
+	],
+	"imdb" : {
+		"rating" : 6.8,
+		"votes" : 1135,
+		"id" : 91
+	},
+	"countries" : [
+		"France"
+	],
+	"genres" : [
+		"Short",
+		"Horror"
+	],
+	"tomatoes" : {
+		"viewer" : {
+			"rating" : 5,
+			"numReviews" : 23
+		},
+		"lastUpdated" : ISODate("2015-06-02T19:48:08Z")
+	},
+	"num_mflix_comments" : 1,
+	"comments" : [
+		{
+			"name" : "Oscar Sanchez",
+			"email" : "oscar_sanchez@fakegmail.com",
+			"movie_id" : ObjectId("573a1390f29313caabcd418c"),
+			"text" : "Non repellat atque in ipsa accusantium. Assumenda modi magni quis.\nRecusandae recusandae dicta repellat ad reprehenderit mollitia quam. Itaque voluptate asperiores quia alias.",
+			"date" : ISODate("2017-02-11T07:00:52Z")
+		}
+	]
+}
+{
+	"_id" : ObjectId("573a1390f29313caabcd4192"),
+	"title" : "The Conjuring of a Woman at the House of Robert Houdin",
+	"year" : 1896,
+	"runtime" : 1,
+	"cast" : [
+		"Jeanne d'Alcy",
+		"Georges M�li�s"
+	],
+	"plot" : "A woman disappears on stage.",
+	"fullplot" : "An elegantly dressed man enters through a stage door onto a set with decorated back screen, a chair and small table. He brings a well-dressed women through the door, spreads a newspaper on the floor, and places the chair on it. She sits and fans herself; he covers her with a diaphanous cloth. She disappears; he tries to conjure her back with incomplete results. Can he go beyond the bare bones of a conjuring trick and succeed in the complete reconstitution of a the lady?",
+	"lastupdated" : "2015-08-26 00:05:55.493000000",
+	"type" : "movie",
+	"directors" : [
+		"Georges M�li�s"
+	],
+	"imdb" : {
+		"rating" : 6.3,
+		"votes" : 759,
+		"id" : 75
+	},
+	"countries" : [
+		"France"
+	],
+	"genres" : [
+		"Short"
+	],
+	"tomatoes" : {
+		"viewer" : {
+			"rating" : 3.7,
+			"numReviews" : 59
+		},
+		"lastUpdated" : ISODate("2015-09-11T17:46:29Z")
+	}
+}
+{
+	"_id" : ObjectId("573a1390f29313caabcd41a9"),
+	"title" : "A Terrible Night",
+	"year" : 1896,
+	"runtime" : 1,
+	"cast" : [
+		"Georges M�li�s"
+	],
+	"plot" : "A man tries to get a good night's sleep, but is disturbed by a giant spider that leaps onto his bed, and a battle ensues in hilarious comic fashion.",
+	"fullplot" : "A man tries to get a good night's sleep, but is disturbed by a giant spider that leaps onto his bed, and a battle ensues in hilarious comic fashion.",
+	"lastupdated" : "2015-08-26 00:07:48.213000000",
+	"type" : "movie",
+	"directors" : [
+		"Georges M�li�s"
+	],
+	"imdb" : {
+		"rating" : 5.9,
+		"votes" : 498,
+		"id" : 131
+	},
+	"countries" : [
+		"France"
+	],
+	"genres" : [
+		"Short",
+		"Comedy"
+	]
+}
+{
+	"_id" : ObjectId("573a1390f29313caabcd41aa"),
+	"title" : "Une partie de cartes",
+	"year" : 1896,
+	"runtime" : 1,
+	"cast" : [
+		"Gaston M�li�s",
+		"Georges M�li�s",
+		"Georgette M�li�s"
+	],
+	"plot" : "Three friends are playing cards in a beer garden. One of them orders drinks. The waitress comes back with a bottle of wine and three glasses on a tray. The man serves his friends. They ...",
+	"fullplot" : "Three friends are playing cards in a beer garden. One of them orders drinks. The waitress comes back with a bottle of wine and three glasses on a tray. The man serves his friends. They clink glasses and drink. Then the man asks for a newspaper. He reads a funny story in it and the three friends burst out laughing while the waitress merely smiles.",
+	"lastupdated" : "2015-07-27 00:27:37.370000000",
+	"type" : "movie",
+	"directors" : [
+		"Georges M�li�s"
+	],
+	"writers" : [
+		"Georges M�li�s"
+	],
+	"imdb" : {
+		"rating" : 5.1,
+		"votes" : 462,
+		"id" : 132
+	},
+	"countries" : [
+		"France"
+	],
+	"genres" : [
+		"Short",
+		"Biography"
+	]
+}
+{
+	"_id" : ObjectId("573a1390f29313caabcd41b1"),
+	"title" : "The Bewitched Inn",
+	"year" : 1897,
+	"runtime" : 2,
+	"cast" : [
+		"Georges M�li�s"
+	],
+	"plot" : "A weary traveler stops at an inn along the way to get a good night's sleep, but his rest is interrupted by odd happenings when he gets to his room--beds vanishing and re-appearing, candles ...",
+	"fullplot" : "A weary traveler stops at an inn along the way to get a good night's sleep, but his rest is interrupted by odd happenings when he gets to his room--beds vanishing and re-appearing, candles exploding, pants flying through the air and his shoes walking away by themselves.",
+	"lastupdated" : "2015-08-29 00:17:59.703000000",
+	"type" : "movie",
+	"directors" : [
+		"Georges M�li�s"
+	],
+	"writers" : [
+		"Georges M�li�s"
+	],
+	"imdb" : {
+		"rating" : 6.5,
+		"votes" : 329,
+		"id" : 138
+	},
+	"countries" : [
+		"France"
+	],
+	"genres" : [
+		"Short",
+		"Comedy"
+	],
+	"num_mflix_comments" : 2,
+	"comments" : [
+		{
+			"name" : "Steven Mcdonald",
+			"email" : "steven_mcdonald@fakegmail.com",
+			"movie_id" : ObjectId("573a1390f29313caabcd41b1"),
+			"text" : "Corrupti perspiciatis aspernatur unde assumenda. Repellat velit animi at. Distinctio amet enim voluptas.",
+			"date" : ISODate("1994-09-20T01:47:13Z")
+		},
+		{
+			"name" : "Meera Reed",
+			"email" : "ellie_kendrick@gameofthron.es",
+			"movie_id" : ObjectId("573a1390f29313caabcd41b1"),
+			"text" : "Ratione deleniti delectus quae deleniti adipisci. Sit nam error temporibus velit. Eum aperiam ratione consectetur illum rem eveniet illo.",
+			"date" : ISODate("1981-06-24T07:48:10Z")
+		}
+	]
+}
+{
+	"_id" : ObjectId("573a1390f29313caabcd41f0"),
+	"title" : "Ella Lola, a la Trilby",
+	"year" : 1898,
+	"cast" : [
+		"Ella Lola"
+	],
+	"plot" : "Dancer Ella Lola dances a routine based on the famous character of \"Trilby\".",
+	"fullplot" : "Dancer Ella Lola dances a routine based on the famous character of \"Trilby\".",
+	"lastupdated" : "2015-08-29 00:19:44.140000000",
+	"type" : "movie",
+	"directors" : [
+		"James H. White"
+	],
+	"writers" : [
+		"George L. Du Maurier (novel)"
+	],
+	"imdb" : {
+		"rating" : 4.7,
+		"votes" : 83,
+		"id" : 192
+	},
+	"countries" : [
+		"USA"
+	],
+	"genres" : [
+		"Short"
+	],
+	"tomatoes" : {
+		"viewer" : {
+			"rating" : 4.1,
+			"numReviews" : 46
+		},
+		"lastUpdated" : ISODate("2015-09-14T17:32:55Z")
+	},
+	"num_mflix_comments" : 1,
+	"comments" : [
+		{
+			"name" : "Tyrion Lannister",
+			"email" : "peter_dinklage@gameofthron.es",
+			"movie_id" : ObjectId("573a1390f29313caabcd41f0"),
+			"text" : "Ipsa dignissimos quibusdam id doloremque quis corrupti placeat. Fugit velit natus nesciunt iure impedit at aut. Doloribus unde dolores deleniti aspernatur eos.",
+			"date" : ISODate("1996-06-11T07:01:30Z")
+		}
+	]
+}
+{
+	"_id" : ObjectId("573a1390f29313caabcd4217"),
+	"title" : "Cinderella",
+	"year" : 1899,
+	"runtime" : 6,
+	"released" : ISODate("1899-12-25T00:00:00Z"),
+	"cast" : [
+		"Barral",
+		"Bleuette Bernon",
+		"Carmely",
+		"Jeanne d'Alcy"
+	],
+	"poster" : "http://ia.media-imdb.com/images/M/MV5BMTgwMDY1MzM1NV5BMl5BanBnXkFtZTgwMjM1MzUwMzE@._V1_SX300.jpg",
+	"plot" : "A fairy godmother magically turns Cinderella's rags to a beautiful dress, and a pumpkin into a coach. Cinderella goes to the ball, where she meets the Prince - but will she remember to leave before the magic runs out?",
+	"fullplot" : "A fairy godmother magically turns Cinderella's rags to a beautiful dress, and a pumpkin into a coach. Cinderella goes to the ball, where she meets the Prince - but will she remember to leave before the magic runs out?",
+	"lastupdated" : "2015-08-29 00:20:56.217000000",
+	"type" : "movie",
+	"directors" : [
+		"Georges M�li�s"
+	],
+	"writers" : [
+		"Charles Perrault (story)"
+	],
+	"imdb" : {
+		"rating" : 6.6,
+		"votes" : 586,
+		"id" : 230
+	},
+	"countries" : [
+		"France"
+	],
+	"genres" : [
+		"Drama",
+		"Short"
+	],
+	"tomatoes" : {
+		"viewer" : {
+			"rating" : 3.7,
+			"numReviews" : 79
+		},
+		"lastUpdated" : ISODate("2015-09-14T18:42:47Z")
+	},
+	"num_mflix_comments" : 1,
+	"comments" : [
+		{
+			"name" : "Osha",
+			"email" : "natalia_tena@gameofthron.es",
+			"movie_id" : ObjectId("573a1390f29313caabcd4217"),
+			"text" : "Odit fugit ipsa repellat laudantium labore quae sunt. Asperiores quasi sint animi cum illum. Pariatur eum cupiditate tempora voluptate magnam velit.",
+			"date" : ISODate("1999-09-26T14:56:12Z")
+		}
+	]
+}
+{
+	"_id" : ObjectId("573a1390f29313caabcd4218"),
+	"title" : "The Sign of the Cross",
+	"year" : 1899,
+	"runtime" : 3,
+	"released" : ISODate("1900-06-30T00:00:00Z"),
+	"cast" : [
+		"Georges M�li�s"
+	],
+	"poster" : "http://ia.media-imdb.com/images/M/MV5BMjM1NTQyNDQxOV5BMl5BanBnXkFtZTgwMTQ1MzUwMzE@._V1_SX300.jpg",
+	"lastupdated" : "2015-08-29 00:21:15.827000000",
+	"type" : "movie",
+	"directors" : [
+		"Georges M�li�s"
+	],
+	"writers" : [
+		"Georges M�li�s"
+	],
+	"imdb" : {
+		"rating" : 6.3,
+		"votes" : 388,
+		"id" : 242
+	},
+	"countries" : [
+		"France"
+	],
+	"genres" : [
+		"Short",
+		"Fantasy"
+	],
+	"tomatoes" : {
+		"viewer" : {
+			"rating" : 3.4,
+			"numReviews" : 33
+		},
+		"lastUpdated" : ISODate("2015-08-15T18:50:24Z")
+	},
+	"num_mflix_comments" : 2,
+	"comments" : [
+		{
+			"name" : "Amy Wolfe",
+			"email" : "amy_wolfe@fakegmail.com",
+			"movie_id" : ObjectId("573a1390f29313caabcd4218"),
+			"text" : "Commodi vitae dolorum quaerat provident explicabo. Tempora dolor blanditiis dolorum. Dignissimos in in quasi voluptatibus ex nisi quos ipsam. Facere facilis eos doloribus debitis beatae cumque.",
+			"date" : ISODate("2007-04-21T23:04:03Z")
+		},
+		{
+			"name" : "Daario Naharis",
+			"email" : "michiel_huisman@gameofthron.es",
+			"movie_id" : ObjectId("573a1390f29313caabcd4218"),
+			"text" : "Quasi voluptatem ea qui ipsam repellendus qui numquam nesciunt. Neque molestiae tempore temporibus distinctio ipsam natus ipsum. Qui corrupti unde at.",
+			"date" : ISODate("1994-10-22T12:11:01Z")
+		}
+	]
+}
+{
+	"_id" : ObjectId("573a1390f29313caabcd421c"),
+	"title" : "A Turn of the Century Illusionist",
+	"year" : 1899,
+	"runtime" : 1,
+	"cast" : [
+		"Georges M�li�s"
+	],
+	"lastupdated" : "2015-08-29 00:21:21.547000000",
+	"type" : "movie",
+	"directors" : [
+		"Georges M�li�s"
+	],
+	"imdb" : {
+		"rating" : 6.6,
+		"votes" : 580,
+		"id" : 246
+	},
+	"countries" : [
+		"France"
+	],
+	"genres" : [
+		"Short"
+	],
+	"tomatoes" : {
+		"viewer" : {
+			"rating" : 3.8,
+			"numReviews" : 32
+		},
+		"lastUpdated" : ISODate("2015-08-20T18:46:44Z")
+	}
+}
+{
+	"_id" : ObjectId("573a1390f29313caabcd4256"),
+	"title" : "Grandma's Reading Glass",
+	"year" : 1900,
+	"runtime" : 2,
+	"released" : ISODate("1900-11-01T00:00:00Z"),
+	"cast" : [
+		"Harold Smith"
+	],
+	"plot" : "A boy looks through glasses at various objects, seen magnified.",
+	"fullplot" : "A child borrows his grandmother's magnifying glass to look at a newspaper ad for Bovril, at a watch, and then at a bird. The child shows grandma what he is doing. The child looks next at grandma's eye, then at a kitten.",
+	"lastupdated" : "2015-08-29 00:23:05.170000000",
+	"type" : "movie",
+	"directors" : [
+		"George Albert Smith"
+	],
+	"imdb" : {
+		"rating" : 6.1,
+		"votes" : 555,
+		"id" : 304
+	},
+	"countries" : [
+		"UK"
+	],
+	"genres" : [
+		"Short"
+	],
+	"num_mflix_comments" : 1,
+	"comments" : [
+		{
+			"name" : "Sandor Clegane",
+			"email" : "rory_mccann@gameofthron.es",
+			"movie_id" : ObjectId("573a1390f29313caabcd4256"),
+			"text" : "Dolor occaecati quas sed a. Omnis aut quia id natus saepe. In architecto deleniti ipsum delectus tempore necessitatibus. Facilis dolorem exercitationem voluptatem quos repellendus animi.",
+			"date" : ISODate("2005-08-02T13:53:59Z")
+		}
+	]
+}
+{
+	"_id" : ObjectId("573a1390f29313caabcd4274"),
+	"title" : "Let Me Dream Again",
+	"year" : 1900,
+	"runtime" : 1,
+	"released" : ISODate("1900-08-01T00:00:00Z"),
+	"cast" : [
+		"Laura Bayley",
+		"Tom Green"
+	],
+	"plot" : "A man dreams he is flirting with an attractive young lady, then he wakes up in bed next to his wife.",
+	"fullplot" : "A man and woman festively dressed in costumes are dreaming. They wake to drink, play, and smoke. He snuggles her; she's happily willing. Suddenly, the scene ends and he's but a homely man in a loveless bed with a homely woman - husband and wife.",
+	"lastupdated" : "2015-08-29 00:23:19.547000000",
+	"type" : "movie",
+	"directors" : [
+		"George Albert Smith"
+	],
+	"imdb" : {
+		"rating" : 5.9,
+		"votes" : 378,
+		"id" : 313
+	},
+	"countries" : [
+		"UK"
+	],
+	"genres" : [
+		"Short",
+		"Comedy"
+	],
+	"tomatoes" : {
+		"viewer" : {
+			"rating" : 3.5,
+			"numReviews" : 44,
+			"meter" : 0
+		},
+		"lastUpdated" : ISODate("2015-06-02T20:12:40Z")
+	},
+	"num_mflix_comments" : 2,
+	"comments" : [
+		{
+			"name" : "Hodor",
+			"email" : "kristian_nairn@gameofthron.es",
+			"movie_id" : ObjectId("573a1390f29313caabcd4274"),
+			"text" : "Dolore autem quos voluptas sunt in. Neque ratione incidunt eius fugit assumenda eaque. Praesentium qui voluptatibus esse accusamus vel. Quos aperiam consectetur sunt deleniti officiis praesentium.",
+			"date" : ISODate("1979-12-14T10:11:37Z")
+		},
+		{
+			"name" : "Jonathan Robbins",
+			"email" : "jonathan_robbins@fakegmail.com",
+			"movie_id" : ObjectId("573a1390f29313caabcd4274"),
+			"text" : "Iure possimus nulla quas corrupti consequatur quisquam. Ut sapiente dolore expedita harum voluptatum. Quod repudiandae libero qui laboriosam provident minima aliquid perferendis.",
+			"date" : ISODate("1975-10-03T22:21:16Z")
+		}
+	]
+}
+{
+	"_id" : ObjectId("573a1390f29313caabcd428d"),
+	"title" : "The India Rubber Head",
+	"year" : 1901,
+	"runtime" : 3,
+	"cast" : [
+		"Georges M�li�s"
+	],
+	"plot" : "A chemist in his laboratory places upon a table his own head, alive; then fixing upon his head a rubber tube with a pair of bellows, he begins to blow with all his might. Immediately the ...",
+	"fullplot" : "A chemist in his laboratory places upon a table his own head, alive; then fixing upon his head a rubber tube with a pair of bellows, he begins to blow with all his might. Immediately the head increases in size and continues to enlarge until it becomes truly colossal while making faces. The chemist, fearing to burst it, opens a cock in the tube. The head immediately contracts and resumes its original size. He then calls his assistant and informs him of his discovery. The assistant, wishing to experiment for himself, seizes the bellows and blows into the head with all his might. The head swells until it bursts with a crash, knocking over the two experimenters.",
+	"lastupdated" : "2015-08-29 00:24:23.860000000",
+	"type" : "movie",
+	"directors" : [
+		"Georges M�li�s"
+	],
+	"imdb" : {
+		"rating" : 7.2,
+		"votes" : 1439,
+		"id" : 359
+	},
+	"countries" : [
+		"France"
+	],
+	"genres" : [
+		"Short",
+		"Comedy"
+	],
+	"tomatoes" : {
+		"viewer" : {
+			"rating" : 3.9,
+			"numReviews" : 97
+		},
+		"lastUpdated" : ISODate("2015-08-04T20:07:17Z")
+	},
+	"num_mflix_comments" : 2,
+	"comments" : [
+		{
+			"name" : "Anthony Hall",
+			"email" : "anthony_hall@fakegmail.com",
+			"movie_id" : ObjectId("573a1390f29313caabcd428d"),
+			"text" : "Sunt nobis doloribus neque asperiores sunt magnam sapiente. Quas quos nam maxime reiciendis.",
+			"date" : ISODate("2005-06-10T14:18:22Z")
+		},
+		{
+			"name" : "Donna Johnson",
+			"email" : "donna_johnson@fakegmail.com",
+			"movie_id" : ObjectId("573a1390f29313caabcd428d"),
+			"text" : "Reprehenderit quidem quae labore earum necessitatibus est repudiandae. A facere eum eum enim beatae saepe eaque. Nisi praesentium vel fuga soluta reiciendis dignissimos.",
+			"date" : ISODate("1992-12-15T09:08:58Z")
+		}
+	]
+}
+{
+	"_id" : ObjectId("573a1390f29313caabcd4292"),
+	"title" : "Panorama of Esplanade by Night",
+	"year" : 1901,
+	"runtime" : 1,
+	"released" : ISODate("1901-11-01T00:00:00Z"),
+	"plot" : "A most perfect picture of the Pan-American Exposition buildings, including the Electric Tower and Temple of Music, as they appear at night.",
+	"fullplot" : "Panoramic view of the 1901 Pan-American Exposition filmed at night. According to Edwin S. Porter, this is the first American film ever shot at night using incandescent light.",
+	"lastupdated" : "2015-08-29 00:24:31.077000000",
+	"type" : "movie",
+	"languages" : [
+		"English"
+	],
+	"directors" : [
+		"Edwin S. Porter"
+	],
+	"imdb" : {
+		"rating" : 5.6,
+		"votes" : 87,
+		"id" : 364
+	},
+	"countries" : [
+		"USA"
+	],
+	"genres" : [
+		"Documentary",
+		"Short"
+	],
+	"tomatoes" : {
+		"viewer" : {
+			"rating" : 4.2,
+			"numReviews" : 6506,
+			"meter" : 91
+		},
+		"fresh" : 8,
+		"critic" : {
+			"rating" : 9.4,
+			"numReviews" : 8,
+			"meter" : 100
+		},
+		"rotten" : 0,
+		"lastUpdated" : ISODate("2015-08-16T18:55:19Z")
+	},
+	"num_mflix_comments" : 1,
+	"comments" : [
+		{
+			"name" : "Ygritte",
+			"email" : "rose_leslie@gameofthron.es",
+			"movie_id" : ObjectId("573a1390f29313caabcd4292"),
+			"text" : "Aut occaecati rem atque. Odio occaecati officiis assumenda quod accusamus assumenda. At voluptate ducimus consectetur unde sunt consectetur dolores.",
+			"date" : ISODate("1990-05-06T18:03:06Z")
+		}
+	]
+}
+{
+	"_id" : ObjectId("573a1390f29313caabcd42bf"),
+	"title" : "Jack and the Beanstalk",
+	"year" : 1902,
+	"runtime" : 10,
+	"released" : ISODate("1902-07-15T00:00:00Z"),
+	"cast" : [
+		"Thomas White"
+	],
+	"poster" : "http://ia.media-imdb.com/images/M/MV5BMjAzNTI3MzI0Nl5BMl5BanBnXkFtZTcwMzQ1MTYzMw@@._V1_SX300.jpg",
+	"plot" : "Porter's sequential continuity editing links several shots to form a narrative of the famous fairy tale story of Jack and his magic beanstalk. Borrowing on cinematographic methods ...",
+	"fullplot" : "Porter's sequential continuity editing links several shots to form a narrative of the famous fairy tale story of Jack and his magic beanstalk. Borrowing on cinematographic methods reminiscent of 'Georges Melies', Porter uses animation, double exposure, and trick photography to illustrate the fairy's apparitions, Jack's dream, and the fast growing beanstalk.",
+	"lastupdated" : "2015-08-29 00:25:25.360000000",
+	"type" : "movie",
+	"languages" : [
+		"English"
+	],
+	"directors" : [
+		"George S. Fleming",
+		"Edwin S. Porter"
+	],
+	"imdb" : {
+		"rating" : 6.2,
+		"votes" : 442,
+		"id" : 399
+	},
+	"countries" : [
+		"USA"
+	],
+	"genres" : [
+		"Short",
+		"Fantasy"
+	]
+}

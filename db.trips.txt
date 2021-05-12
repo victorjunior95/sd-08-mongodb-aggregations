@@ -1,0 +1,541 @@
+db.trips.find().pretty()
+{
+	"_id" : ObjectId("572bb8222b288919b68abf5a"),
+	"bikeid" : 17827,
+	"usertype" : "Subscriber",
+	"gender" : 1,
+	"birthYear" : 1969,
+	"endStationId" : 498,
+	"endStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.98808416,
+			40.74854862
+		]
+	},
+	"endStationName" : "Broadway & W 32 St",
+	"startStationId" : 476,
+	"startStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.97966069,
+			40.74394314
+		]
+	},
+	"startStationName" : "E 31 St & 3 Ave",
+	"startTime" : ISODate("2016-01-01T00:00:45Z"),
+	"stopTime" : ISODate("2016-01-01T00:07:04Z")
+}
+{
+	"_id" : ObjectId("572bb8222b288919b68abf5b"),
+	"bikeid" : 22794,
+	"usertype" : "Subscriber",
+	"gender" : 2,
+	"birthYear" : 1961,
+	"endStationId" : 3002,
+	"endStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-74.015756,
+			40.711512
+		]
+	},
+	"endStationName" : "South End Ave & Liberty St",
+	"startStationId" : 268,
+	"startStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.99973337,
+			40.71910537
+		]
+	},
+	"startStationName" : "Howard St & Centre St",
+	"startTime" : ISODate("2016-01-01T00:01:06Z"),
+	"stopTime" : ISODate("2016-01-01T00:15:56Z")
+}
+{
+	"_id" : ObjectId("572bb8222b288919b68abf5c"),
+	"bikeid" : 21997,
+	"usertype" : "Subscriber",
+	"gender" : 2,
+	"birthYear" : 1982,
+	"endStationId" : 284,
+	"endStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-74.0026376103,
+			40.7390169121
+		]
+	},
+	"endStationName" : "Greenwich Ave & 8 Ave",
+	"startStationId" : 489,
+	"startStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-74.00176802,
+			40.75066386
+		]
+	},
+	"startStationName" : "10 Ave & W 28 St",
+	"startTime" : ISODate("2016-01-01T00:00:48Z"),
+	"stopTime" : ISODate("2016-01-01T00:10:37Z")
+}
+{
+	"_id" : ObjectId("572bb8222b288919b68abf5d"),
+	"bikeid" : 22285,
+	"usertype" : "Subscriber",
+	"gender" : 1,
+	"birthYear" : 1958,
+	"endStationId" : 3002,
+	"endStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-74.015756,
+			40.711512
+		]
+	},
+	"endStationName" : "South End Ave & Liberty St",
+	"startStationId" : 268,
+	"startStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.99973337,
+			40.71910537
+		]
+	},
+	"startStationName" : "Howard St & Centre St",
+	"startTime" : ISODate("2016-01-01T00:00:41Z"),
+	"stopTime" : ISODate("2016-01-01T00:16:04Z")
+}
+{
+	"_id" : ObjectId("572bb8222b288919b68abf5e"),
+	"bikeid" : 15788,
+	"usertype" : "Subscriber",
+	"gender" : 1,
+	"birthYear" : 1984,
+	"endStationId" : 389,
+	"endStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.96525063,
+			40.71044554
+		]
+	},
+	"endStationName" : "Broadway & Berry St",
+	"startStationId" : 3104,
+	"startStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.96150225,
+			40.72057658
+		]
+	},
+	"startStationName" : "Kent Ave & N 7 St",
+	"startTime" : ISODate("2016-01-01T00:01:19Z"),
+	"stopTime" : ISODate("2016-01-01T00:06:51Z")
+}
+{
+	"_id" : ObjectId("572bb8222b288919b68abf5f"),
+	"bikeid" : 24183,
+	"usertype" : "Subscriber",
+	"gender" : 1,
+	"birthYear" : 1963,
+	"endStationId" : 3164,
+	"endStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.97898475,
+			40.7770575
+		]
+	},
+	"endStationName" : "Columbus Ave & W 72 St",
+	"startStationId" : 3167,
+	"startStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.98093044757842,
+			40.77966809007312
+		]
+	},
+	"startStationName" : "Amsterdam Ave & W 73 St",
+	"startTime" : ISODate("2016-01-01T00:01:27Z"),
+	"stopTime" : ISODate("2016-01-01T00:40:08Z")
+}
+{
+	"_id" : ObjectId("572bb8222b288919b68abf60"),
+	"bikeid" : 15747,
+	"usertype" : "Subscriber",
+	"gender" : 1,
+	"birthYear" : 1996,
+	"endStationId" : 497,
+	"endStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.99009296,
+			40.73704984
+		]
+	},
+	"endStationName" : "E 17 St & Broadway",
+	"startStationId" : 268,
+	"startStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.99973337,
+			40.71910537
+		]
+	},
+	"startStationName" : "Howard St & Centre St",
+	"startTime" : ISODate("2016-01-01T00:02:18Z"),
+	"stopTime" : ISODate("2016-01-01T00:13:53Z")
+}
+{
+	"_id" : ObjectId("572bb8222b288919b68abf61"),
+	"bikeid" : 23933,
+	"usertype" : "Subscriber",
+	"gender" : 1,
+	"birthYear" : 1963,
+	"endStationId" : 259,
+	"endStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-74.01234218,
+			40.70122128
+		]
+	},
+	"endStationName" : "South St & Whitehall St",
+	"startStationId" : 527,
+	"startStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.976056,
+			40.744023
+		]
+	},
+	"startStationName" : "E 33 St & 2 Ave",
+	"startTime" : ISODate("2016-01-01T00:03:12Z"),
+	"stopTime" : ISODate("2016-01-01T00:26:09Z")
+}
+{
+	"_id" : ObjectId("572bb8222b288919b68abf62"),
+	"bikeid" : 14562,
+	"usertype" : "Subscriber",
+	"gender" : 1,
+	"birthYear" : 1952,
+	"endStationId" : 2006,
+	"endStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.97634151,
+			40.76590936
+		]
+	},
+	"endStationName" : "Central Park S & 6 Ave",
+	"startStationId" : 2006,
+	"startStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.97634151,
+			40.76590936
+		]
+	},
+	"startStationName" : "Central Park S & 6 Ave",
+	"startTime" : ISODate("2016-01-01T00:01:12Z"),
+	"stopTime" : ISODate("2016-01-01T00:25:52Z")
+}
+{
+	"_id" : ObjectId("572bb8222b288919b68abf63"),
+	"bikeid" : 23993,
+	"usertype" : "Subscriber",
+	"gender" : 1,
+	"birthYear" : 1971,
+	"endStationId" : 311,
+	"endStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.98802084,
+			40.7172274
+		]
+	},
+	"endStationName" : "Norfolk St & Broome St",
+	"startStationId" : 432,
+	"startStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.98379855,
+			40.72621788
+		]
+	},
+	"startStationName" : "E 7 St & Avenue A",
+	"startTime" : ISODate("2016-01-01T00:03:43Z"),
+	"stopTime" : ISODate("2016-01-01T00:13:59Z")
+}
+{
+	"_id" : ObjectId("572bb8222b288919b68abf64"),
+	"bikeid" : 22541,
+	"usertype" : "Subscriber",
+	"gender" : 1,
+	"birthYear" : 1970,
+	"endStationId" : 509,
+	"endStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-74.00197139,
+			40.7454973
+		]
+	},
+	"endStationName" : "9 Ave & W 22 St",
+	"startStationId" : 3226,
+	"startStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.97137,
+			40.78275
+		]
+	},
+	"startStationName" : "W 82 St & Central Park West",
+	"startTime" : ISODate("2016-01-01T00:04:43Z"),
+	"stopTime" : ISODate("2016-01-01T00:34:14Z")
+}
+{
+	"_id" : ObjectId("572bb8222b288919b68abf65"),
+	"bikeid" : 22193,
+	"usertype" : "Subscriber",
+	"gender" : 1,
+	"birthYear" : 1988,
+	"endStationId" : 236,
+	"endStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.98713956,
+			40.7284186
+		]
+	},
+	"endStationName" : "St Marks Pl & 2 Ave",
+	"startStationId" : 331,
+	"startStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.99193043,
+			40.71173107
+		]
+	},
+	"startStationName" : "Pike St & Monroe St",
+	"startTime" : ISODate("2016-01-01T00:05:40Z"),
+	"stopTime" : ISODate("2016-01-01T00:14:25Z")
+}
+{
+	"_id" : ObjectId("572bb8222b288919b68abf66"),
+	"bikeid" : 18665,
+	"usertype" : "Subscriber",
+	"gender" : 1,
+	"birthYear" : 1964,
+	"endStationId" : 490,
+	"endStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.993934,
+			40.751551
+		]
+	},
+	"endStationName" : "8 Ave & W 33 St",
+	"startStationId" : 444,
+	"startStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.98915076,
+			40.7423543
+		]
+	},
+	"startStationName" : "Broadway & W 24 St",
+	"startTime" : ISODate("2016-01-01T00:05:41Z"),
+	"stopTime" : ISODate("2016-01-01T00:16:49Z")
+}
+{
+	"_id" : ObjectId("572bb8222b288919b68abf67"),
+	"bikeid" : 22174,
+	"usertype" : "Subscriber",
+	"gender" : 1,
+	"birthYear" : 1976,
+	"endStationId" : 3168,
+	"endStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.96961715,
+			40.78472675
+		]
+	},
+	"endStationName" : "Central Park West & W 85 St",
+	"startStationId" : 3165,
+	"startStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.9762057363987,
+			40.77579376683666
+		]
+	},
+	"startStationName" : "Central Park West & W 72 St",
+	"startTime" : ISODate("2016-01-01T00:06:35Z"),
+	"stopTime" : ISODate("2016-01-01T00:10:36Z")
+}
+{
+	"_id" : ObjectId("572bb8222b288919b68abf68"),
+	"bikeid" : 15061,
+	"usertype" : "Subscriber",
+	"gender" : 1,
+	"birthYear" : 1989,
+	"endStationId" : 3104,
+	"endStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.96150225,
+			40.72057658
+		]
+	},
+	"endStationName" : "Kent Ave & N 7 St",
+	"startStationId" : 3117,
+	"startStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.95866,
+			40.73564
+		]
+	},
+	"startStationName" : "Franklin St & Dupont St",
+	"startTime" : ISODate("2016-01-01T00:07:39Z"),
+	"stopTime" : ISODate("2016-01-01T00:16:39Z")
+}
+{
+	"_id" : ObjectId("572bb8222b288919b68abf69"),
+	"bikeid" : 24071,
+	"usertype" : "Subscriber",
+	"gender" : 1,
+	"birthYear" : 1970,
+	"endStationId" : 545,
+	"endStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.97809472,
+			40.736502
+		]
+	},
+	"endStationName" : "E 23 St & 1 Ave",
+	"startStationId" : 442,
+	"startStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.993915,
+			40.746647
+		]
+	},
+	"startStationName" : "W 27 St & 7 Ave",
+	"startTime" : ISODate("2016-01-01T00:08:17Z"),
+	"stopTime" : ISODate("2016-01-01T00:29:03Z")
+}
+{
+	"_id" : ObjectId("572bb8222b288919b68abf6a"),
+	"bikeid" : 23563,
+	"usertype" : "Subscriber",
+	"gender" : 1,
+	"birthYear" : 1993,
+	"endStationId" : 3104,
+	"endStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.96150225,
+			40.72057658
+		]
+	},
+	"endStationName" : "Kent Ave & N 7 St",
+	"startStationId" : 3117,
+	"startStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.95866,
+			40.73564
+		]
+	},
+	"startStationName" : "Franklin St & Dupont St",
+	"startTime" : ISODate("2016-01-01T00:08:42Z"),
+	"stopTime" : ISODate("2016-01-01T00:16:42Z")
+}
+{
+	"_id" : ObjectId("572bb8222b288919b68abf6b"),
+	"bikeid" : 15721,
+	"usertype" : "Subscriber",
+	"gender" : 2,
+	"birthYear" : 1972,
+	"endStationId" : 483,
+	"endStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.98889957,
+			40.73223272
+		]
+	},
+	"endStationName" : "E 12 St & 3 Ave",
+	"startStationId" : 483,
+	"startStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.98889957,
+			40.73223272
+		]
+	},
+	"startStationName" : "E 12 St & 3 Ave",
+	"startTime" : ISODate("2016-01-01T00:09:19Z"),
+	"stopTime" : ISODate("2016-01-01T00:15:58Z")
+}
+{
+	"_id" : ObjectId("572bb8222b288919b68abf6c"),
+	"bikeid" : 15082,
+	"usertype" : "Subscriber",
+	"gender" : 1,
+	"birthYear" : 1982,
+	"endStationId" : 439,
+	"endStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.98978041,
+			40.7262807
+		]
+	},
+	"endStationName" : "E 4 St & 2 Ave",
+	"startStationId" : 284,
+	"startStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-74.0026376103,
+			40.7390169121
+		]
+	},
+	"startStationName" : "Greenwich Ave & 8 Ave",
+	"startTime" : ISODate("2016-01-01T00:08:47Z"),
+	"stopTime" : ISODate("2016-01-01T00:23:36Z")
+}
+{
+	"_id" : ObjectId("572bb8222b288919b68abf6d"),
+	"bikeid" : 17057,
+	"usertype" : "Customer",
+	"gender" : 0,
+	"birthYear" : "",
+	"endStationId" : 401,
+	"endStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.98997825,
+			40.72019576
+		]
+	},
+	"endStationName" : "Allen St & Rivington St",
+	"startStationId" : 532,
+	"startStationLocation" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.960876,
+			40.710451
+		]
+	},
+	"startStationName" : "S 5 Pl & S 4 St",
+	"startTime" : ISODate("2016-01-01T00:09:31Z"),
+	"stopTime" : ISODate("2016-01-01T00:23:49Z")
+}
