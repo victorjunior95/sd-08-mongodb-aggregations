@@ -4,6 +4,8 @@ DBNAME=aggregations ./scripts/resetdb.sh assets
 
 Fazer tetes
 ./scripts/evaluate.sh
+
+https://github.com/tryber/sd-08-mongodb-aggregations/pull/20
 -->
 
 ### Termos e acordos
