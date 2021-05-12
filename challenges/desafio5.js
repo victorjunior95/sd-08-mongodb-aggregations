@@ -1,3 +1,4 @@
+use("aggregations");
 const favoriteActors = [
   "Sandra Bullock",
   "Tom Hanks",
@@ -36,4 +37,11 @@ db.movies.aggregate([
   {
     $limit: 1,
   },
+  {
+    $project: {
+      _id: 0,
+      title: 1,
+    }
+  }
 ]);
+
