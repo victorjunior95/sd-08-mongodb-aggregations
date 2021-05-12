@@ -28,11 +28,11 @@ print_results() {
 }
 
 # Print tests evaluation
-for entry in "$TRYBE_DIR/expected-results"/*
-do
-# for i in $(seq 2 2)
+# for entry in "$TRYBE_DIR/expected-results"/*
 # do
-#   entry="$TRYBE_DIR/expected-results/desafio$i"
+for i in $(seq 1 3)
+do
+  entry="$TRYBE_DIR/expected-results/desafio$i"
   scripts/resetdb.sh "$DB_RESTORE_DIR"
   # Get challenge name
   chName=$(echo "$(basename $entry)" | sed -e "s/.js//g")
