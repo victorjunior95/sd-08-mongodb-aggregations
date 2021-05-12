@@ -1,4 +1,3 @@
-use("aggregations");
 const favoriteActors = [
   "Sandra Bullock",
   "Tom Hanks",
