@@ -1,26 +1,29 @@
-const HOUR = 60 * 60 * 1000;
 db.trips.aggregate([
   {
     $addFields: {
       duracao: {
         $divide: [
           { $subtract: ["$stopTime", "$startTime"] },
-          HOUR,
+          60 * 1000,
         ],
       },
     },
   },
   {
     $group: {
-      _id: "$usertype",
+      _id: "$bikeid",
       duracaoMedia: { $avg: "$duracao" },
     },
   },
   {
     $project: {
       _id: 0,
-      tipo: "$_id",
-      duracaoMedia: { $round: ["$duracaoMedia", 2] },
+      bikeId: "$_id",
+      duracaoMedia: {
+        $ceil: "$duracaoMedia",
+      },
     },
   },
+  { $sort: { duracaoMedia: -1 } },
+  { $limit: 5 },
 ]);
