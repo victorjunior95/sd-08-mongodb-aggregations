@@ -1,5 +1,5 @@
 const HOUR = 60 * 60 * 1000;
-db.trips.aggregate(
+db.trips.aggregate([
   {
     $addFields: {
       duracao: {
@@ -23,4 +23,4 @@ db.trips.aggregate(
       duracaoMedia: { $round: ["$duracaoMedia", 2] },
     },
   },
-);
+]);

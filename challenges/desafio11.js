@@ -1,4 +1,4 @@
-db.trips.aggregate(
+db.trips.aggregate([
   {
     $addFields: {
       diaDaSemana: {
@@ -21,4 +21,4 @@ db.trips.aggregate(
   },
   { $sort: { total: -1 } },
   { $limit: 1 },
-);
+]);

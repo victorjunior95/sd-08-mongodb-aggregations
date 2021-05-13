@@ -1,4 +1,4 @@
-db.trips.aggregate(
+db.trips.aggregate([
   {
     $match: {
       birthYear: {
@@ -15,4 +15,4 @@ db.trips.aggregate(
     },
   },
   { $project: { _id: 0 } },
-);
+]);

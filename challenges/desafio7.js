@@ -1,4 +1,4 @@
-db.movies.aggregate(
+db.movies.aggregate([
   {
     $match: {
       languages: "English",
@@ -24,4 +24,4 @@ db.movies.aggregate(
       _id: -1,
     },
   },
-);
+]);

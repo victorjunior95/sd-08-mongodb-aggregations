@@ -1,4 +1,4 @@
-db.air_alliances.aggregate(
+db.air_alliances.aggregate([
   { $unwind: "$airlines" },
   {
     $lookup: {
@@ -22,4 +22,4 @@ db.air_alliances.aggregate(
   },
   { $sort: { totalRotas: -1 } },
   { $limit: 1 },
-);
+]);

@@ -2,7 +2,7 @@
 // $lookup stage exceeds 104857600 bytes
 // Vlwww Rosiii, por me ajudar a descobrir o que era esse problema :D
 
-db.trips.aggregate(
+db.trips.aggregate([
   {
     $addFields: {
       diaDaSemana: {
@@ -60,4 +60,4 @@ db.trips.aggregate(
   },
   { $sort: { total: -1 } },
   { $limit: 1 },
-);
+]);

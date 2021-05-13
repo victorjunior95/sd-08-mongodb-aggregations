@@ -1,4 +1,4 @@
-db.movies.aggregate(
+db.movies.aggregate([
   {
     $project: {
       _id: 0,
@@ -19,4 +19,4 @@ db.movies.aggregate(
       title_split: 1,
     },
   },
-);
+]);
