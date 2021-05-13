@@ -1,6 +1,5 @@
 // https://docs.mongodb.com/manual/reference/operator/aggregation/subtract/
 // https://docs.mongodb.com/manual/reference/operator/aggregation/divide/
-
 const convertHours = 3600000;
 db.trips.aggregate([
   {
