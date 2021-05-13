@@ -1,9 +1,14 @@
 db.trips.aggregate([
   {
-    $group: {
-      _id: {
+    $addFields: {
+      daysWeek: {
         $dayOfWeek: "$startTime",
       },
+    },
+  },
+  {
+    $group: {
+      _id: "$daysWeek",
       total: { $sum: 1 },
     },
   },
@@ -18,13 +23,13 @@ db.trips.aggregate([
   {
     $lookup: {
       from: "trips",
-      let: { dayWeek: "$_id" },
+      let: { daysWeek: "$_id" },
       pipeline: [
         {
           $match: {
             $expr: [
               {
-                $eq: [{ $dayOfWeek: "$startTime" }, "$$dayWeek"],
+                $eq: [{ $dayOfWeek: "$startTime" }, "$$daysWeek"],
               },
             ],
           },
@@ -34,4 +39,30 @@ db.trips.aggregate([
     },
   },
 
+]);
+
+// ================
+
+db.trips.aggregate([
+  {
+    $addFields: {
+      daysWeek: {
+        $dayOfWeek: "$startTime",
+      },
+    },
+  },
+  {
+    $group: {
+      _id: "$daysWeek",
+      total: { $sum: 1 },
+    },
+  },
+  {
+    $sort: {
+      total: -1,
+    },
+  },
+  {
+    $limit: 1,
+  },
 ]);
