@@ -4,7 +4,7 @@ db.movies.aggregate([
       "imdb.rating": { $gt: 7 },
       genres: { $nin: ["Crime", "Horror"] },
       languages: { $in: ["English", "Spanish"] },
-      rated: { $in: ["PG", "G"] }
-    }
-  }
+      rated: { $in: ["PG", "G"] },
+    },
+  },
 ]);
