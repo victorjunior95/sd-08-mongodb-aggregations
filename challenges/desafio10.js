@@ -1,3 +1,6 @@
+// https://docs.mongodb.com/manual/reference/operator/aggregation/subtract/
+// https://docs.mongodb.com/manual/reference/operator/aggregation/divide/
+
 const convertHours = 3600000;
 db.trips.aggregate([
   {
@@ -6,7 +9,6 @@ db.trips.aggregate([
       duracaoMedia: {
         $avg: {
           $subtract: ["$stopTime", "$startTime"],
-          // https://docs.mongodb.com/manual/reference/operator/aggregation/subtract/
         },
       },
     },
@@ -17,7 +19,6 @@ db.trips.aggregate([
       tipo: "$_id",
       duracaoMedia: {
         $round: [{ $divide: ["$duracaoMedia", convertHours] }, 2],
-        // https://docs.mongodb.com/manual/reference/operator/aggregation/divide/
       },
     },
   },
