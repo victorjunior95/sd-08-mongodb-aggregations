@@ -13,11 +13,11 @@ db.movies.aggregate([
         },
         {
           languages: { $all: ["English", "Spanish"] },
-        }
-      ]
+        },
+      ],
     },
   },
   {
     $limit: 41,
-  }
+  },
 ]);
