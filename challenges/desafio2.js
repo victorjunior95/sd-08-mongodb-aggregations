@@ -8,7 +8,7 @@ db.movies.aggregate([
         {
           genres: { $nin: ["Crime", "Horror"] },
         },
-        { 
+        {
           rated: { $in: ["PG", "G"] },
         },
         {
@@ -26,7 +26,8 @@ db.movies.aggregate([
       avaliado: "$rated",
       notaIMDB: "$imdb.rating",
       votosIMDB: "$imdb.votes",
-      ano: "$year", _id: 0,
+      ano: "$year",
+      _id: 0,
     },
   },
 ]);
