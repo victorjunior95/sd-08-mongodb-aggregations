@@ -1,6 +1,5 @@
 // The difference between stopTime and startTime was shown as milliseconds,
 // then I divided like ( ms / 1000 / 60 / 60 ) = / 3600000 to display it as hours.
-
 db.trips.aggregate(
   [{
     $addFields: {
