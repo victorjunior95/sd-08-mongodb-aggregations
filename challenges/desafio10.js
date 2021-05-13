@@ -9,6 +9,9 @@ db.trips.aggregate([
     },
   },
   {
+    $sort: { duracaoMedia: 1 },
+  },
+  {
     $project: {
       _id: 0,
       tipo: "$_id",
