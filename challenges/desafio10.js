@@ -12,4 +12,9 @@ db.trips.aggregate([
       duracaoMedia: { $round: [{ $divide: ["$dateDifference", 60 * 60 * 1000] }, 2] },
     },
   },
+  {
+    $sort: {
+      duracaoMedia: 1,
+    },
+  },
 ]);
