@@ -1,9 +1,17 @@
 db.trips.aggregate([
   {
     $addFields: {
-      diaDaSemana: { $dayOfWeek: "$startTime" },
       duracao: { $subtract: ["$stopTime", "$startTime"] },
-      filtro: ISODate("2016-03-10T00:00:00Z"),
+      dia: { $dayOfMonth: "$startTime" },
+      ano: { $year: "$startTime" },
+      mes: { $month: "$startTime" },
+    },
+  },
+  {
+    $match: {
+      mes: 3,
+      dia: 10,
+      ano: 2016,
     },
   },
   {
@@ -14,29 +22,8 @@ db.trips.aggregate([
   },
   {
     $project: {
-      duracaoMediaEmMinutos: { $divide: ["$duracaoMedia", 1000 * 60] },
-    },
-  },
-  {
-    $project: {
-      duracaoMediaEmMinutos: { $ceil: "$duracaoMediaEmMinutos" },
       _id: 0,
+      duracaoMediaEmMinutos: { $ceil: { $divide: ["$duracaoMedia", 1000 * 60] } },
     },
   },
-]);
-
-db.trips.aggregate([
-  {
-    $addFields: {
-      diaDaSemana: { $dayOfWeek: "$startTime" },
-      duracao: { $subtract: ["$stopTime", "$startTime"] },
-      filtro: ISODate("2016-03-10T00:00:00Z"),
-    },
-  },
-  {
-    $match: {
-      startTime: "2016-03-10T00:00:00Z",
-    },
-  },
-
 ]);
