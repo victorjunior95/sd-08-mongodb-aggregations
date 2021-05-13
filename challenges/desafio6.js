@@ -37,7 +37,7 @@ db.movies.aggregate([
         $round: ["$avg", 1],
       },
       desvio_padrao: {
-        $round: ["$steDevSamp", 1],
+        $round: ["$stdDevSamp", 1],
       },
     },
   },
