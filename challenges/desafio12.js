@@ -1,8 +1,7 @@
 db.trips.aggregate([
   { $addFields: { diaDaSemana: { $dayOfWeek: "$startTime" } } },
-  { $match: { diaDaSemana: 5 } },
-  { $group: { _id: "$startStationName", total: { $sum: 1 } } },
-  { $project: { nomeEstacao: "$_id", total: 1, _id: 0 } },
+  { $group: { _id: { diaDaSemana: "$diaDaSemana", nomeEstacao: "$startStationName" }, total: { $sum: 1 } } }, // metodo _id recebendo um objeto visto no projeto do amigo Ediberto BO
+  { $project: { _id: 0, nomeEstacao: "$_id.nomeEstacao", total: "$total" } },
   { $sort: { total: -1 } },
   { $limit: 1 },
 ]);
