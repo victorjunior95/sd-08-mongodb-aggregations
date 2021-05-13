@@ -3,11 +3,7 @@ db.trips.aggregate([
     $addFields: {
       diaDaSemana: { $dayOfWeek: "$startTime" },
       duracao: { $subtract: ["$stopTime", "$startTime"] },
-    },
-  },
-  {
-    $match: {
-      diaDaSemana: 5,
+      filtro: ISODate("2016-03-10T00:00:00Z"),
     },
   },
   {
@@ -27,4 +23,20 @@ db.trips.aggregate([
       _id: 0,
     },
   },
+]);
+
+db.trips.aggregate([
+  {
+    $addFields: {
+      diaDaSemana: { $dayOfWeek: "$startTime" },
+      duracao: { $subtract: ["$stopTime", "$startTime"] },
+      filtro: ISODate("2016-03-10T00:00:00Z"),
+    },
+  },
+  {
+    $match: {
+      startTime: "2016-03-10T00:00:00Z",
+    },
+  },
+
 ]);
