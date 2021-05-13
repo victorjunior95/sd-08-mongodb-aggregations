@@ -3,38 +3,38 @@ const actors = [
   "Tom Hanks",
   "Julia Roberts",
   "Kevin Spacey",
-  "George Clooney"
-  ];
+  "George Clooney",
+];
 db.movies.aggregate([
   {
     $match: {
       countries: { $eq: "USA" },
       "tomatoes.viewer.rating": { $gte: 3 },
-      cast: { $in: actors }
-    }
+      cast: { $in: actors },
+    },
   },
   {
     $addFields: {
-      num_favs: { $size: { $setIntersection: ["$cast", actors] } }
-    }
+      num_favs: { $size: { $setIntersection: ["$cast", actors] } },
+    },
   },
   {
     $sort: {
       num_favs: -1,
       "tomatoes.viewer.rating": -1,
-      title: -1
-    }
+      title: -1,
+    },
   },
   {
-    $skip: 24 // https://docs.mongodb.com/manual/reference/operator/aggregation/skip/
+    $skip: 24,// https://docs.mongodb.com/manual/reference/operator/aggregation/skip/
   },
   {
-    $limit: 1
+    $limit: 1,
   },
   {
     $project: {
       _id: 0,
-      title: 1
-    }
-  }
+      title: 1,
+    },
+  },
 ]);
