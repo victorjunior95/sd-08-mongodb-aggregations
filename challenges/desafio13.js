@@ -3,7 +3,8 @@ db.trips.aggregate(
     {
       $match: {
         startTime: {
-          $eq: ISODate("2016-03-10"),
+          $gte: ISODate("2016-03-10"),
+          $lt: ISODate("2016-03-11"),
         },
       },
     },
