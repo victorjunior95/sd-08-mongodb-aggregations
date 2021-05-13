@@ -9,4 +9,4 @@
 // { "tipo" : <tipo>, "duracaoMedia" : <duracaoMedia> }
 const ONE_HOUR_IN_MILISECONDS = 3600000;
 
-db.trips.aggregate([{ $group: { _id: "$usertype", duracaoMedia: { $avg: { $subtract: ["$stopTime", "$startTime"] } } } }, { $project: { tipo: "$id", duracaoMedia: { $round: [{ $divide: ["$duracaoMedia", ONE_HOUR_IN_MILISECONDS] }, 2] } } }, { $sort: { duracaoMedia: 1 } }]);
+db.trips.aggregate([{ $group: { _id: "$usertype", duracaoMedia: { $avg: { $subtract: ["$stopTime", "$startTime"] } } } }, { $project: { tipo: "$_id", duracaoMedia: { $round: [{ $divide: ["$duracaoMedia", ONE_HOUR_IN_MILISECONDS] }, 2] }, _id: 0 } }, { $sort: { duracaoMedia: 1 } }]);
