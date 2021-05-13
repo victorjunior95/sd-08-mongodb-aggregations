@@ -6,5 +6,5 @@ db.movies.aggregate([
       languages: { $in: ["English", "Spanish"] },
       rated: { $in: ["PG", "G"] },
     },
-  },
+  }, { $limit: 41 },
 ]);
