@@ -6,7 +6,7 @@ db.trips.aggregate([
         $avg: {
           $divide: [
             { $subtract: ["$stopTime", "$startTime"],
-            }, 60000, // -> 1 minuto dividido por 60s === 1 / 60
+            }, 60000,
           ],
         },
       },
