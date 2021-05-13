@@ -13,5 +13,5 @@ db.movies.aggregate([
     ano: "$year",
     _id: 0,
   } },
-  { $sort: { ano: -1, notaIMDB: 1 } },
+  { $sort: { ano: -1, notaIMDB: -1 } },
 ]);
