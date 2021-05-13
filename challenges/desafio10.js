@@ -11,5 +11,6 @@ db.trips.aggregate([
     duracaoMedia: { $round: ["$Media", 2] },
     _id: 0,
   } },
+  { $sort: { duracaoMedia: 1 } },
 ]);
 /* source: https://stackoverflow.com/questions/41138877/how-to-calculate-timestamp-difference-in-mongodb-in-hours */
