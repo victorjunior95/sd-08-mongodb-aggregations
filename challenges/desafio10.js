@@ -1,12 +1,13 @@
 // The difference between stopTime and startTime was shown as milliseconds,
 // then I divided like ( ms / 1000 / 60 / 60 ) = / 3600000 to display it as hours.
+const convertMillisecondsToHours = 3600000;
 db.trips.aggregate(
   [{
     $addFields: {
-      duracaoViagem: {
+      tripDuration: {
         $divide: [
           { $subtract: ["$stopTime", "$startTime"] },
-          3600000,
+          convertMillisecondsToHours,
         ],
       },
     },
@@ -14,14 +15,14 @@ db.trips.aggregate(
   {
     $group: {
       _id: "$usertype",
-      duracaoMedia: { $avg: "$duracaoViagem" },
+      averageDuration: { $avg: "$tripDuration" },
     },
   },
   {
     $project: {
       _id: 0,
       tipo: "$_id",
-      duracaoMedia: { $round: ["$duracaoMedia", 2] },
+      duracaoMedia: { $round: ["$averageDuration", 2] },
     },
   }],
 );
