@@ -26,7 +26,7 @@ db.movies.aggregate([
     },
   },
   {
-    $skip: 24,// https://docs.mongodb.com/manual/reference/operator/aggregation/skip/
+    $skip: 24, // https://docs.mongodb.com/manual/reference/operator/aggregation/skip/
   },
   {
     $limit: 1,
