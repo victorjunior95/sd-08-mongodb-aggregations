@@ -15,9 +15,9 @@ db.movies.aggregate([
                   "Tom Hanks",
                   "Julia Roberts",
                   "Kevin Spacey",
-                  "George Clooney"
-                ]
-              ]
+                  "George Clooney",
+                ],
+              ],
             },
           },
           else: 0,
