@@ -2,12 +2,7 @@ db.movies.createIndex({ awards: "text" });
 
 db.movies.aggregate([
   {
-    $match:
-    {
-      $text: { $search: "won" },
-      "imdb.rating": { $ne: "" },
-      "imdb.rating": { $lte: 9.2 }
-    }
+    $match: { $text: { $search: "won" }, "imdb.rating": [{ $ne: "" }, { $lte: 9.2 }] },
   },
   {
     $group:
@@ -16,7 +11,7 @@ db.movies.aggregate([
       maior_rating: { $max: "$imdb.rating" },
       menor_rating: { $min: "$imdb.rating" },
       media: { $avg: "$imdb.rating" },
-      desvio: { $stdDevSamp: "$imdb.rating" }
+      desvio: { $stdDevSamp: "$imdb.rating" },
     }
 
   },
@@ -28,7 +23,7 @@ db.movies.aggregate([
       media_rating: { $round: ["$media", 1] },
       desvio_padrao: { $trunc: ["$desvio", 1] },
 
-    }
-  }
+    },
+  },
 
 ]);

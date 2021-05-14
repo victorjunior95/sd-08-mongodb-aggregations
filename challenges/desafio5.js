@@ -20,7 +20,8 @@ db.movies.aggregate([
         $size: {
           $setIntersection: ["$cast", lista],
         },
-      }, title: 1,
+      }, 
+       title: 1,
        "tomatoes.viewer.rating": 1,
        _id: 0,
     },
