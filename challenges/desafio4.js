@@ -16,7 +16,7 @@ db.movies.aggregate([
   },
   {
     $sort: {
-      title_split: -1,
+      title_split: 1,
     },
   },
 ]);
