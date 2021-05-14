@@ -5,7 +5,7 @@ db.movies.aggregate([
     {$text:{$search:"won"},
     "imdb.rating":{$ne:""},
     "imdb.rating":{$lte:9.2}
-    },
+    }},
     {$group: 
         {
         _id: null,
