@@ -25,3 +25,6 @@ db.movies.aggregate(
     },
   ],
 );
+
+// código regex verificado na branch pública do Ivanildo
+// https://github.com/tryber/sd-08-mongodb-aggregations/pull/46/files
