@@ -1,28 +1,39 @@
-// db.movies.aggregate([
-//   {
-//     $match: {
-//       "filme.nome": "Toy Story",
-//     },
-//   },
-//   {
-//     $group: {
-//       _id: null,
-//       count: {
-//         $sum: 1,
-//       },
-//     },
-//   },
-// ]);
-// ----------------------------------
-// db.movies.aggregate([
-//   {
-//     $match: {
-//       "filme.nome": "Toy Story",
-//     },
-//   },
-//   {
-//     $count: "totalDeVoos",
-//   },
-// ]);
-// db.voos.aggregate([{ $match: { "empresa.nome": "AMERICAN AIRLINES" } }, { $sort: { decolagens: -1 } }, { $limit: 1 } ]);
-// no group você faz as somas e tal. No project, altera nomes.
+db.movies.aggregate([
+  {
+    $match: {
+      awards: {
+        $regex: /Won\s\d{1,2}\sOscar/gi,
+      },
+    },
+  },
+  {
+    $group: {
+      _id: null,
+      maior_rating: {
+        $max: "$imdb.rating",
+      },
+      menor_rating: {
+        $min: "$imdb.rating",
+      },
+      media_rating: {
+        $avg: "$imdb.rating",
+      },
+      desvio_padrao: {
+        $stdDevSamp: "$imdb.rating",
+      },
+    },
+  },
+  {
+    $project: {
+      _id: 0,
+      maior_rating: 1,
+      menor_rating: 1,
+      media_rating: {
+        $round: ["$media_rating", 1],
+      },
+      desvio_padrao: {
+        $round: ["$desvio_padrao", 1],
+      },
+    },
+  },
+]);
