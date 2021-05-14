@@ -1,5 +1,5 @@
 // Solution to find dates found at:
-// https://stackoverflow.com/questions/31071999/date-comparison-in-mongodb
+// https://stackoverflow.com/questions/25395760/find-data-for-specific-date-in-mongodb
 const convertMillisecondsToMinutes = 60000;
 db.trips.aggregate(
   [{
