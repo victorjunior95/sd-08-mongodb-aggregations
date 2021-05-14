@@ -1,14 +1,12 @@
 db.trips.aggregate([
   {
     $addFields: {
-      daysWeek: {
-        $dayOfWeek: "$startTime",
-      },
+      dayWeek: { $dayOfWeek: "$startTime" },
     },
   },
   {
     $group: {
-      _id: "$daysWeek",
+      _id: "$dayWeek",
       total: { $sum: 1 },
     },
   },
@@ -19,50 +17,51 @@ db.trips.aggregate([
   },
   {
     $limit: 1,
+  },
+  {
+    $project: {
+      _id: 0,
+      diaDaSemana: "$_id",
+      total: "$total",
+    },
   },
   {
     $lookup: {
       from: "trips",
-      let: { daysWeek: "$_id" },
+      let: { isDay: "$diaDaSemana" },
       pipeline: [
         {
-          $match: {
-            $expr: [
-              {
-                $eq: [{ $dayOfWeek: "$startTime" }, "$$daysWeek"],
-              },
-            ],
+          $addFields: {
+            inDay: { $dayOfWeek: "$startTime" },
           },
         },
+        {
+          $match: {
+            $expr: { $eq: ["$inDay", "$$isDay"] },
+          },
+        },
+        {
+          $group: {
+            _id: "$startStationName",
+            totalDias: { $sum: 1 },
+            day: { $first: "$inDay" },
+          },
+        },
+        {
+          $sort: { totalDias: -1 },
+        },
+        {
+          $limit: 1,
+        },
       ],
-      as: "dias_mais_viagens",
+      as: "dataStation",
     },
   },
-
-]);
-
-// ================
-
-db.trips.aggregate([
+  { $unwind: "$dataStation" },
   {
-    $addFields: {
-      daysWeek: {
-        $dayOfWeek: "$startTime",
-      },
+    $project: {
+      nomeEstacao: "$dataStation._id",
+      total: "$dataStation.totalDias",
     },
-  },
-  {
-    $group: {
-      _id: "$daysWeek",
-      total: { $sum: 1 },
-    },
-  },
-  {
-    $sort: {
-      total: -1,
-    },
-  },
-  {
-    $limit: 1,
   },
 ]);
