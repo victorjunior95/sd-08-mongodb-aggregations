@@ -2,7 +2,7 @@ db.trips.aggregate([
   {
     $group: {
       _id: "$usertype",
-      media: {
+      _avg: {
         $avg: {
           $subtract: ["$stopTime", "$startTime"],
         },
@@ -16,7 +16,7 @@ db.trips.aggregate([
       duracaoMedia: {
         $round: [
           {
-            $divide: ["$media", 1000 * 60 * 60],
+            $divide: ["$_avg", 1000 * 60 * 60],
           },
           2,
         ],
