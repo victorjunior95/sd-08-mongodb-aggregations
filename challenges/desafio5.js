@@ -7,7 +7,7 @@ db.movies.aggregate([
     },
   },
   {
-    $addFields: { fav_acts: ["Sandra Bullock", "Tom Hanks", "Julia Roberts", "Kevin Spacey", "George Clooney"] }
+    $addFields: { fav_acts: ["Sandra Bullock", "Tom Hanks", "Julia Roberts", "Kevin Spacey", "George Clooney"] },
   },
   { $addFields: { num_favs: { $size: { $setIntersection: ["$fav_acts", "$cast"] } } } },
   { $sort: { num_favs: -1, "tomatoes.viewer.rating": -1, title: -1 } },
