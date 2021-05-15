@@ -10,4 +10,5 @@ db.movies.aggregate([
 
   { $sort: { numeroFilmes: -1, mediaIMDB: -1 } },
 
+  { $limit: 47055 },
 ]);
