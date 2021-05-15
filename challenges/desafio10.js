@@ -1,9 +1,10 @@
+const ms = 3600000;
 db.trips.aggregate([{
   $group: {
     _id: "$usertype",
     avgTime: {
       $avg: { $divide: [
-        { $subtract: ["$stopTime", "$startTime"] }, 1000 * 60 * 60,
+        { $subtract: ["$stopTime", "$startTime"] }, ms,
       ] },
     },
   },
