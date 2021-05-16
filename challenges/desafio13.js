@@ -1,0 +1,28 @@
+db.trips.aggregate([
+  {
+    $match: {
+      startTime: {
+        $gte: ISODate("2016-03-10"),
+        $lt: ISODate("2016-03-11"),
+      },
+    },
+  },
+  {
+    $group: {
+      _id: null,
+      mediaMilissegundos: { $avg: { $subtract: ["$stopTime", "$startTime"] } },
+    },
+  },
+  {
+    $project: {
+      _id: 0,
+      // 1 minuto = 60000 milissegundos
+      duracaoMediaEmMinutos: {
+        $ceil: {
+          $divide: ["$mediaMilissegundos", 60000],
+        },
+      },
+    },
+  },
+  // { $count: "myCount" }
+]);
