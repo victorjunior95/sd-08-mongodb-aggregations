@@ -6,8 +6,8 @@ db.movies.aggregate([
         { genres: { $nin: ["Crime", "Horror"] } },
         { rated: { $in: ["PG", "G"] } },
         { languages: { $all: ["English", "Spanish"] } },
-      ]
-    }
+      ],
+    },
   },
   {
     $project: {
@@ -17,6 +17,6 @@ db.movies.aggregate([
       notaIMDB: "$imdb.rating",
       votosIMDB: "$imdb.votes",
       ano: "$year",
-    }
-  }
+    },
+  },
 ]);
