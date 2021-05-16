@@ -4,6 +4,7 @@ db.trips.aggregate([
     somaTempos: { $sum: { $subtract: ["$stopTime", "$startTime"] } },
     count: { $sum: 1 },
   } },
+  { $sort: { count: -1 } },
   { $project: {
     _id: 0,
     tipo: "$_id",
