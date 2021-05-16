@@ -29,7 +29,7 @@ print_results() {
 
 # Print tests evaluation
 # for entry in "$TRYBE_DIR/expected-results"/*
-for i in $(seq 9 9)
+for i in $(seq 10 10)
 do
   entry="$TRYBE_DIR/expected-results/desafio$i"
   scripts/resetdb.sh "$DB_RESTORE_DIR"
