@@ -1,31 +1,26 @@
 use('aggregations');
 const aggregation = [
   {
-    $match:
-        { $and:
-          [
-            { awards: { $regex: /Won *[0-9]* Oscar/i } },
-          ],
-        },
+    $project: {
+      _id: 0,
+      tipo: "$_id",
+      diaDaSemana: { $dayOfWeek: "$startTime" },
+    },
   },
   {
     $group: {
-      _id: null,
-      maior_rating: { $max: "$imdb.rating" },
-      menor_rating: { $min: "$imdb.rating" },
-      media_rating: { $avg: "$imdb.rating" },
-      desvio_padrao: { $stdDevSamp: "$imdb.rating" },
+      total: { $sum: 1 },
+      _id: "$diaDaSemana",
     },
   },
+  { $sort: { total: -1 } },
   {
     $project: {
+      diaDaSemana: "$_id",
       _id: 0,
-      maior_rating: 1,
-      menor_rating: 1,
-      media_rating: { $round: ["$media_rating", 3] },
-      desvio_padrao: { $round: ["$desvio_padrao", 2] },
+      total: "$total",
     },
   },
+  { $limit: 1 },
 ];
-
-db.movies.aggregate(aggregation);
+db.trips.aggregate(aggregation);

@@ -18,7 +18,8 @@ const aggregation = [
     $project: {
       _id: 0,
       diaDaSemana: "$_id",
-      total: 1,
-    } },
+      total: "$total",
+    },
+  },
 ];
 db.trips.aggregate(aggregation);
