@@ -11,7 +11,7 @@ db.air_alliances.aggregate(
   { $unwind: "$temp" },
   {
     $match: {
-      "rotas.airplane": { $in: ["747", "380"] },
+      "temp.airplane": { $in: ["747", "380"] },
     },
   },
   {
