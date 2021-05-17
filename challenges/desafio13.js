@@ -22,7 +22,7 @@ db.trips.aggregate([
           ],
         },
       },
-    }
+    },
   },
   {
     $project: {
