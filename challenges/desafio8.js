@@ -15,7 +15,7 @@ db.air_routes.aggregate([
   { $match: { nome_da_alianca: { $ne: null } } },
 
   { $group: { _id: "$nome_da_alianca", totalRotas: { $sum: 1 } } },
-
+  { $sort: { totalRotas: -1 } },
   { $limit: 1 },
 
 ]);
