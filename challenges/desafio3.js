@@ -7,7 +7,6 @@ db.movies.aggregate([
       languages: { $all: ["English", "Spanish"] },
     },
   },
-  { $limit: 41 },
   {
     $project: {
       _id: 0,
@@ -21,7 +20,7 @@ db.movies.aggregate([
   {
     $sort: {
       ano: -1,
-      noteIMDB: -1,
+      notaIMDB: -1,
       titulo: 1,
     },
   },
