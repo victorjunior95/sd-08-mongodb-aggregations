@@ -1,39 +1,35 @@
 use('aggregations');
 const milisegMinutos = 60*1000;
 const aggregation = [
-    {
-
-        $match: {
-            $and: 
-                [
-                    {startTime: {$gte: new Date("2016-03-10T00:00:00.000Z")}},
-                    {startTime: {$lt: new Date("2016-03-11T00:00:00.000Z")}},
-                ]
-        },
+  {
+    $project: {
+      _id: 0,
+      diaDaSemana: { $dayOfWeek: "$startTime" },
+      startStationName: 1,
+      endStationName: 1,
     },
+  },
+  {
+    $match: {
+      diaDaSemana: 5,
+    },
+  },
   {
     $group: {
-      _id: null,
-      duracaoMedia:
-            {
-              $avg:
-                {
-                  $subtract: ["$stopTime", "$startTime"],
-                },
-            },
+      _id: "$startStationName",
+      total: {$sum: 1},
     },
   },
+  { $sort: { total: -1 } },
+  { $limit: 1 },
   {
-      /**
-       * specifications: The fields to
-       *   include or exclude.
-       */
-      $project: {
-        _id:0,
-        duracaoMediaEmMinutos: {$ceil: {$divide: ["$duracaoMedia",milisegMinutos]} }
-      }
+    $project: {
+      _id: 0,
+      nomeEstacao: "$_id",
+      total: "$total",
+    },
   },
-]
+];
 db.trips.aggregate(aggregation);
 // https://stackoverflow.com/questions/19819870/date-query-with-isodate-in-mongodb-doesnt-seem-to-work
 
