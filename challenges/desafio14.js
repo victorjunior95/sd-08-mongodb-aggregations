@@ -2,7 +2,7 @@ db.trips.aggregate([
   {
     $group: {
       _id: "$bikeid",
-      duracaoMedia: {
+      averageOfTrip: {
         $avg: {
           $divide: [
             {
@@ -16,10 +16,10 @@ db.trips.aggregate([
   },
   {
     $project: {
-      _id: 0,
+      _id: false,
       bikeId: "$_id",
       duracaoMedia: {
-        $ceil: "$duracaoMedia",
+        $ceil: "$averageOfTrip",
       },
     },
   },
