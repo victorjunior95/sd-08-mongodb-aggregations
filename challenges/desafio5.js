@@ -19,12 +19,12 @@ db.movies.aggregate([
   },
   {
     $addFields: {
-      num_favs: { $setIntersection: ["$cast", atoresFavoritos] },
+      listaAtores: { $setIntersection: ["$cast", atoresFavoritos] },
     },
   },
   {
     $addFields: {
-      num_favs: { $size: ["$num_favs"] },
+      num_favs: { $size: ["$listaAtores"] },
     },
   },
   { $sort: { num_favs: -1, "tomatoes.viewer.rating": -1, title: -1 } },
