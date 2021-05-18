@@ -9,7 +9,7 @@ const actors = [
 db.movies.aggregate([
   {
     $match: {
-      countries: { $eq: "USA" },
+      countries: { $in: ["USA"] },
       "tomatoes.viewer.rating": { $gte: 3 },
       cast: { $exists: true },
     },
