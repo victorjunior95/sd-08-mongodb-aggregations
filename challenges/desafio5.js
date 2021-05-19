@@ -37,3 +37,6 @@ db.movies.aggregate([
   { $limit: 1 },
   // { $count: "myCount" }
 ]);
+// documento
+// https://docs.mongodb.com/manual/reference/operator/query/size/
+// https://docs.mongodb.com/manual/reference/operator/aggregation/setIntersection/
