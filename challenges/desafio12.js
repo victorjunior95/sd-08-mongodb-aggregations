@@ -19,6 +19,9 @@ db.trips.aggregate([
     },
   },
   {
+    $match: { maxTrips: { $size: 1 } },
+  },
+  {
     $group: {
       _id: "$startStationName", total: { $sum: 1 },
     },
