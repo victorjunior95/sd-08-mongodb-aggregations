@@ -1,3 +1,5 @@
+const horasEmMs = 3600000;
+
 db.trips.aggregate([
   {
     $addFields:
@@ -13,7 +15,7 @@ db.trips.aggregate([
               "$startTime",
             ],
           },
-          3600000,
+          horasEmMs,
         ],
       },
     },
@@ -39,8 +41,5 @@ db.trips.aggregate([
         ],
       },
     },
-  },
-  {
-    $sort: { duracao_media: 1 },
   },
 ]);
