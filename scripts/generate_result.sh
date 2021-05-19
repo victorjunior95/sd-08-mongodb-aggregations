@@ -28,11 +28,9 @@ print_results() {
 }
 
 # Print tests evaluation
-# for entry in "$TRYBE_DIR/expected-results"/*
-requisito=12
-for i in $(seq $requisito $requisito)
+for entry in "$TRYBE_DIR/expected-results"/*
+
 do
-  entry="$TRYBE_DIR/expected-results/desafio$i"
   scripts/resetdb.sh "$DB_RESTORE_DIR"
   # Get challenge name
   chName=$(echo "$(basename $entry)" | sed -e "s/.js//g")
@@ -51,7 +49,6 @@ do
   scripts/exec.sh "$mql" &> "$resultPath"
   # Check result with the expected
   diff=$(diff "$resultPath" "$TRYBE_DIR/expected-results/$chName")
-  diff --color "$resultPath" "$TRYBE_DIR/expected-results/$chName"
   if [[ ! -z "$diff" ]]; then
     printf "\n%s: \e[1;31mfailed \e[0m" "$chName" >> "$RESULTS_DIR/evaluation.out"
     print_results
