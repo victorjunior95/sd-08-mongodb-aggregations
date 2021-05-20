@@ -4,13 +4,13 @@ db.air_alliances.aggregate([
       from: "air_routes",
       localField: "airlines",
       foreignField: "airline.name",
-      as: "routesAlli",
+      as: "route",
     },
   },
-  { $unwind: "$routesAlli" },
+  { $unwind: "$route" },
   { $match:
     {
-      "$routesAlli.airplane": {
+      "$route.airplane": {
         $in: ["747", "380"],
       },
     },

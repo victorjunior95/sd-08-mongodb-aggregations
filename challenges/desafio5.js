@@ -11,6 +11,7 @@ db.movies.aggregate([
     {
       countries: "USA",
       "tomatoes.viewer.rating": { $gte: 3 },
+      cast: { $exists: true },
     },
   },
   { $addFields:
