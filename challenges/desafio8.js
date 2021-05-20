@@ -1,4 +1,5 @@
 db.air_alliances.aggregate([
+  { $unwind: "$airlines" },
   { $lookup:
     {
       from: "air_routes",
