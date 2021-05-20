@@ -13,11 +13,17 @@ db.movies.aggregate([
       "tomatoes.viewer.rating": { $gte: 3 },
     },
   },
-  { $project:
+  { $addFields:
     {
       num_favs: {
         $size: { $setIntersection: ["$cast", favoriteActors] },
       },
+    },
+  },
+  { $project:
+    {
+      title: 1,
+      _id: 0,
     },
   },
   { $sort:
