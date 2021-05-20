@@ -7,8 +7,8 @@ db.trips.aggregate([
   { $group:
     {
       _id: null,
-      menorAnoNascimento: { $min: { $toInt: "birthYear" } },
-      maiorAnoNascimento: { $max: { $toInt: "birthYear" } },
+      menorAnoNascimento: { $min: { $toInt: "$birthYear" } },
+      maiorAnoNascimento: { $max: { $toInt: "$birthYear" } },
     },
   },
   { $project:
