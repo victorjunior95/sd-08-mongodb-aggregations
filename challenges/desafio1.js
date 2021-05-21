@@ -11,3 +11,11 @@ languages contém English e Spanish.
 Utilize a coleção movies.
 Sua query deve retornar 41 documentos.
 */
+db.movies.aggregate([
+  { $match: { "imdb.rating": { $gte: 7 } } },
+  { $match: { genres: { $nin: ["Crime", "Horror"] } } },
+  { $match: { rated: { $in: ["PG", "G"] } } },
+  { $match: { languages: { $all: ["English", "Spanish"] } } },
+  { $project: { languages: 1, _id: 0 } },
+  { $group: { _id: null, quant: { $sum: 1 } } },
+]);
