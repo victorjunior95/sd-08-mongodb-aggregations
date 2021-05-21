@@ -9,3 +9,11 @@ O resultado da sua query deve ter o seguinte formato:
 "votosIMDB" : 14091, "ano" : 2015 }
 // Demais documentos
 */
+db.movies.aggregate([
+  { $match: { "imdb.rating": { $gte: 7 } } },
+  { $match: { genres: { $nin: ["Crime", "Horror"] } } },
+  { $match: { rated: { $in: ["PG", "G"] } } },
+  { $match: { languages: { $all: ["English", "Spanish"] } } },
+  { $project: { titulo: "$title", avaliado: "$rated", notaIMDB: "$imdb.rating", votosIMDB: "$imdb.votes", ano: "$year", _id: 0 } },
+  { $sort: { ano: -1, notaIMDB: -1, titulo: 1 } },
+]);
