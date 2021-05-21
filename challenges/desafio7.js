@@ -12,3 +12,34 @@ Sua query deve retornar 47055 documentos. Cada documento no resultado deve ter o
 
 { "_id" : "John Wayne", "numeroFilmes" : 107, "mediaIMDB" : 6.4 }
 */
+db.movies.aggregate([
+  {
+    $match: {
+      "imdb.rating": { $gt: 0 },
+      languages: { $all: ["English"] },
+    },
+  },
+  {
+    $unwind: "$cast",
+  },
+  {
+    $group: {
+      _id: "$cast",
+      numeroFilmes: { $sum: 1 },
+      total_rating: { $sum: "$imdb.rating" },
+    },
+  },
+  {
+    $addFields: {
+      mediaIMDB: { $divide: ["$total_rating", "$numeroFilmes"] },
+    },
+  },
+  {
+    $project: {
+      _id: 1,
+      numeroFilmes: 1,
+      mediaIMDB: { $round: ["$mediaIMDB", 1] },
+    },
+  },
+  { $sort: { numeroFilmes: -1 } },
+]);
