@@ -20,3 +20,17 @@ Dica: utilize os operadores $split, $size e $sort para te auxiliar. Documenta√ß√
 
 Sua query deve retornar 8068 documentos.
 */
+db.movies.aggregate([
+  {
+    $project: {
+      _id: 0,
+      title: { $split: ["$title", " "] },
+    },
+  },
+  {
+    $match: {
+      title: { $size: 1 },
+    },
+  },
+  { $sort: { title: 1 } },
+]);
