@@ -2,15 +2,15 @@
 //  a) Arredonde o resultado para cima.
 // O resultado da sua query deve ter o seguinte formato:
 // { "duracaoMediaEmMinutos" : <duracao_media_em_minutos> }
-const HrToMs = 3600000;
+const MnToMs = 60000;
 db.trips.aggregate([
   { $match: { startTime: { $gte: new Date("2016-03-10"), $lt: new Date("2016-03-11") } } },
   { $group: {
     _id: null,
-    duracaoMediaEmMinutos: { $divide: [{ $subtract: ["$stopTime", "$startTime"] }, HrToMs] },
+    duracaoMediaEmMinutos: { $avg: { $subtract: ["$stopTime", "$startTime"] } },
   } },
   { $project: {
     _id: 0,
-    duracaoMediaEmMinutos: { $ceil: { $avg: "$duracaoMediaEmMinutos" } },
+    duracaoMediaEmMinutos: { $ceil: { $divide: ["$duracaoMediaEmMinutos", MnToMs] } },
   } },
 ]);
