@@ -8,7 +8,7 @@
 // O resultado da sua query deve ter o seguinte formato:
 // { "maiorAnoNascimento" : <ano>, "menorAnoNascimento" : <ano> }
 db.trips.aggregate([
-  { $match: { birthday: { $ne: "" } } },
+  { $match: { birthYear: { $ne: "" } } },
   { $group: {
     _id: null,
     maiorAnoNascimento: { $max: { $toInt: "$birthYear" } },
