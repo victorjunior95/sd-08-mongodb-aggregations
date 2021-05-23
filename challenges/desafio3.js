@@ -14,7 +14,7 @@ db.movies.aggregate([{
     titulo: "$title",
     avaliado: "$rated",
     notaIMDB: "$imdb.rating",
-    votosIMDB: "$imdb.vote",
+    votosIMDB: "$imdb.votes",
     ano: "$year",
   },
 }, {
