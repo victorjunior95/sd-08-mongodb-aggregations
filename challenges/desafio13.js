@@ -4,15 +4,13 @@
 // { "duracaoMediaEmMinutos" : <duracao_media_em_minutos> }
 const HrToMs = 3600000;
 db.trips.aggregate([
-  { $match: {
-    startTime: { $gte: new Date("2016-03-10"), $lt: new Date("2016-03-11") },
-  } },
+  { $match: { startTime: { $gte: new Date("2016-03-10"), $lt: new Date("2016-03-11") } } },
   { $group: {
     _id: null,
-    duracaoMediaEmMinutos: { $avg: { $subtract: ["$stopTime", "$startTime"] } },
+    duracaoMediaEmMinutos: { $divide: [{ $subtract: ["$stopTime", "$startTime"] }, HrToMs] },
   } },
   { $project: {
     _id: 0,
-    duracaoMediaEmMinutos: { $ceil: { $divide: ["$duracaoMediaEmMinutos", HrToMs] } },
+    duracaoMediaEmMinutos: { $ceil: { $avg: "$duracaoMediaEmMinutos" } },
   } },
 ]);

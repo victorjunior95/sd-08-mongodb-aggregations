@@ -7,7 +7,7 @@
 // { "bikeId" : <bike_id>, "duracaoMedia" : <duracao_media> }
 // { "bikeId" : <bike_id>, "duracaoMedia" : <duracao_media> }
 // { "bikeId" : <bike_id>, "duracaoMedia" : <duracao_media> }
-const HrToMs = 3600000;
+const MnToMs = 60000;
 db.trips.aggregate([
   { $group: {
     _id: "$bikeid",
@@ -15,8 +15,8 @@ db.trips.aggregate([
   } },
   { $project: {
     _id: 0,
-    bike_id: "$_id",
-    duracaoMedia: { $ceil: { $divide: ["$duracaoMedia", HrToMs] } },
+    bikeId: "$_id",
+    duracaoMedia: { $ceil: { $divide: ["$duracaoMedia", MnToMs] } },
   } },
   { $sort: { duracaoMedia: -1 } },
   { $limit: 5 },
