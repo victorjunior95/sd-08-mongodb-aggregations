@@ -1,5 +1,3 @@
-use("aggregations");
-
 db.movies.aggregate([{
   $match: {
     "imdb.rating": { $gte: 7 },
@@ -20,6 +18,6 @@ db.movies.aggregate([{
 }, {
   $sort: {
     ano: -1,
-    notaIMDB: 1,
+    notaIMDB: -1,
   },
 }]);
