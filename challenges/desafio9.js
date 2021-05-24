@@ -33,5 +33,3 @@ db.trips.aggregate([
     },
   },
 ]);
-
-db.trips.findOne();
