@@ -15,8 +15,7 @@ Sua query deve retornar 47055 documentos. Cada documento no resultado deve ter o
 db.movies.aggregate([
   {
     $match: {
-      "imdb.rating": { $gt: 0 },
-      languages: { $all: ["English"] },
+      languages: "English",
     },
   },
   {
