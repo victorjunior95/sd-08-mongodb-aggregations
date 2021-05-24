@@ -7,3 +7,24 @@ O resultado da sua query deve ter o seguinte formato:
 
 { "diaDaSemana" : <dia_da_semana>, "total" : <total_de_viagens> }
 */
+db.trips.aggregate([
+  {
+    $group: {
+      _id: { $dayOfWeek: "$startTime" },
+      total: { $sum: 1 },
+    },
+  },
+  {
+    $project: {
+      _id: 0,
+      diaDaSemana: "$_id",
+      total: 1,
+    },
+  },
+  {
+    $sort: { total: -1 },
+  },
+  {
+    $limit: 1,
+  },
+]);
