@@ -9,3 +9,27 @@ O resultado da sua query deve ter o seguinte formato:
 
 { "nomeEstacao" : <nome_da_estacao>, "total" : <total_de_viagens> }
 */
+db.trips.aggregate([
+  {
+    $group: {
+      _id: {
+        diaDaSemana: { $dayOfWeek: "$startTime" },
+        startStation: "$startStationName",
+      },
+      total: { $sum: 1 },
+    },
+  },
+  {
+    $project: {
+      _id: 0,
+      total: 1,
+      nomeEstacao: "$_id.startStation",
+    },
+  },
+  {
+    $sort: { total: -1 },
+  },
+  {
+    $limit: 1,
+  },
+]);
