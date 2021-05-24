@@ -1,14 +1,14 @@
 db.movies.aggregate([
-    {
-        $match: {
-            $and: [
-                { "imdb.rating": { $gt: 6 } },
-                { genres: { $not: { $in: ["Crime", "Horror"] } } },
-                { rated: { $in: ["PG", "G"] } },
-                { languages: { $all: ["English", "Spanish"] } },
-            ],
-        },
+  {
+    $match: {
+      $and: [
+        { "imdb.rating": { $gt: 6 } },
+        { genres: { $not: { $in: ["Crime", "Horror"] } } },
+        { rated: { $in: ["PG", "G"] } },
+        { languages: { $all: ["English", "Spanish"] } },
+      ],
     },
+  },
 ]);
 //  db.collection.aggregate()
 //  db.collection.aggregate(pipeline, options)
