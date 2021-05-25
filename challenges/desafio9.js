@@ -6,7 +6,7 @@ db.trips.aggregate([
   { $group:
       {
         _id: "tantofaz",
-        maiorAnoNascimento: { $max: "$birthYear" },
+        maiorAnoNascimento: { $max: { $toInt: "$birthYear" } },
         menorAnoNascimento: { $min: "$birthYear" },
       },
   },
@@ -18,3 +18,6 @@ db.trips.aggregate([
       },
   },
 ]);
+//  toInt: Transforma string em numero.
+//  { $toInt: <expression> }
+//  https://docs.mongodb.com/manual/reference/operator/aggregation/toInt/
