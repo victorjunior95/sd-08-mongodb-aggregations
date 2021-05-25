@@ -9,9 +9,6 @@ db.air_routes.aggregate([
           as: "alliance" },
   },
   //  é necessário utilizar duas coleções diferentes...(lookup é "um JOIN")
-  { $match:
-      { "alliance.name": { $exists: true } },
-  },
   { $unwind: "$alliance" },
   { $group:
       { _id: "$alliance.name",
