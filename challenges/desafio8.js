@@ -9,8 +9,8 @@ db.air_routes.aggregate([
   { $unwind: "$airAlliances" },
   { $group: {
     _id: "$airAlliances.name",
-    total_rotas: { $sum: 1 },
+    totalRotas: { $sum: 1 },
   } },
-  { $sort: { total_rotas: -1 } },
+  { $sort: { totalRotas: -1 } },
   { $limit: 1 },
 ]);
