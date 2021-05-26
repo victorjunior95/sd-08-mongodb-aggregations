@@ -5,11 +5,7 @@ db.trips.aggregate([
   },
   { $group:
       { _id: "$bikeid",
-        avg:
-        { $avg:
-          { $divide:
-            ["$time", 60000],
-          },
+        avg: { $avg: { $divide: ["$time", 60000] },
         },
       },
   },
