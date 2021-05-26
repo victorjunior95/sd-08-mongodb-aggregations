@@ -13,7 +13,10 @@ db.trips.aggregate([
     },
   },
   {
-    $sort: { total: -1 },
+    $sort: { total: 1 },
+  },
+  {
+    $skip: 6,
   },
   {
     $limit: 1,
