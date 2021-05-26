@@ -1,6 +1,8 @@
 db.trips.aggregate([
   { $addFields: { dayAtWeek: { $dayOfWeek: "$startTime" } } },
   //  necessario primeir adicionar o campo para depois comparar-lo com o valor.
+  //  { $match: { { dayAtWeek: { $dayOfWeek: "$startTime" } }: { $eq: 5} } é inválido,
+  //  pois o field { { dayAtWeek: { $dayOfWeek: "$startTime" } } não existe. =P
   { $match: { dayAtWeek: 5 } },
   {
     $group: {
