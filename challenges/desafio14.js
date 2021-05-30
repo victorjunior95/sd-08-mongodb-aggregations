@@ -1,13 +1,4 @@
-use("aggregations");
-
 db.trips.aggregate([
-  {
-    $match: {
-      startTime: {
-        $gte: ISODate("2016-03-10"),
-      },
-    },
-  },
   {
     $group: {
       _id: "$bikeid",
@@ -34,5 +25,8 @@ db.trips.aggregate([
     $sort: {
       duracaoMedia: -1,
     },
+  },
+  {
+    $limit: 5,
   },
 ]);
