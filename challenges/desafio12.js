@@ -20,4 +20,7 @@ db.trips.aggregate([
       total: -1,
     },
   },
+  {
+    $limit: 1,
+  },
 ]);
