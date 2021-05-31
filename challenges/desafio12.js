@@ -19,19 +19,19 @@ db.trips.aggregate([
         {
           $project: {
             _id: 0,
-            diaDaSemana: "$_id",
+            comMaisViagens: "$_id",
             total: 1,
-            dia2: "$$diaDaSemana",
+            atual: "$$diaDaSemana",
           },
         },
       ],
-      as: "lalala",
+      as: "dia",
     },
   },
   {
     $match: {
       $expr: {
-        $eq: ["$lalala.diaDaSemana", "$lalala.dia2"],
+        $eq: ["$dia.comMaisViagens", "$dia.atual"],
       },
     },
   },
@@ -46,5 +46,12 @@ db.trips.aggregate([
   },
   {
     $limit: 1,
+  },
+  {
+    $project: {
+      _id: 0,
+      nomeEstacao: "$_id",
+      total: 1,
+    },
   },
 ]);
