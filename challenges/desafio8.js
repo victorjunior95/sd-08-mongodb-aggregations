@@ -3,7 +3,7 @@ db.air_alliances.aggregate([{
     from: "air_routes",
     localField: "airlines",
     foreignField: "airline.name",
-    as: "alliance_routes"
+    as: "alliance_routes",
   },
 },
 { $unwind: "$alliance_routes" },
