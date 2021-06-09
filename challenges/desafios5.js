@@ -1,3 +1,5 @@
+const actors = ["Sandra Bullock", "Tom Hanks", "Julia Roberts", "Kevin Spacey", "George Clooney"];
+
 db.movies.aggregate([
   { $match: {
     countries: "USA",
@@ -21,5 +23,6 @@ db.movies.aggregate([
   { $project: {
     _id: 0,
     title: 1,
-  } },
+  },
+  },
 ]);
