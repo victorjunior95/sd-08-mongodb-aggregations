@@ -19,4 +19,9 @@ db.trips.aggregate([
       duracaoMedia: { $round: ["$duracaoMedia", 2] },
     },
   },
+  {
+    $sort: {
+      tipo: -1,
+    },
+  },
 ]);
