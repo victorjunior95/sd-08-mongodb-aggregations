@@ -3,7 +3,7 @@ const favorites = [
   "Tom Hanks",
   "Julia Roberts",
   "Kevin Spacey",
-  "George Clooney"
+  "George Clooney",
 ];
 
 db.movies.aggregate([
