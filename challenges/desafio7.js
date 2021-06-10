@@ -1,4 +1,4 @@
-b.movies.aggregate([
+db.movies.aggregate([
   {
     $match: {
       $and: [{ languages: { $exists: 1 } },
